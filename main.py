@@ -6,13 +6,14 @@ import pyautogui as pa
 import sys
 from datetime import datetime as dt
 from blum_game import blum_game_start
+from quests import blum, yescoin, pocket, snapster, hexacore, tabizoo
 
 
 #------------------------/////----------------------------
 #                КОНСТАНТЫ И ПЕРЕМЕННЫЕ
 #------------------------/////----------------------------
 
-WORK_PATH = 'accounts'
+WORK_PATH = 'C:\\Users\\AYarin.StreetArt\\Desktop\\telegram'
 
 pages = {
     'Blum':'find\\pages\\blum.png', 'PocketFi':'find\\pages\\pocket.png',
@@ -338,7 +339,6 @@ def main_function(type_pass, mode, work_list_account, work_list_quests):
     print(f'Включен {type_pass.upper()} режим. Квесты будут {mode.upper()}-иться')
     
     if type_pass == 'm':
-        logs(3, 'o', f'включен ручной режим')
         
         work_list_account, work_list_quests = function_params()
         
@@ -349,15 +349,25 @@ def main_function(type_pass, mode, work_list_account, work_list_quests):
         
     else:
         var_list_account, var_list_quests = work_list_account.copy(), work_list_quests.copy()
+
+    
     
     
     
     while len(var_list_account) > 0:
+
+        #pre-launch
+        sum_acc = len(work_list_account)
+        random.shuffle(work_list_account)
         
         for i, account in enumerate(work_list_account):
             
+            #make new var_list_quests for accounts that dont launch yet!
             if i > 0:
                 var_list_quests = work_list_quests.copy()
+            
+            random.shuffle(var_list_quests)
+            
             
             logs(3, 'o', f'{account} will launch')
             
@@ -366,28 +376,31 @@ def main_function(type_pass, mode, work_list_account, work_list_quests):
             if account not in var_list_account:
                 
                 logs(2, 'o', f'{account} was alredy done')
+                pa.click(*c_gram['exit_account'], duration=0.5)
+                time.sleep(2)
                 continue
                 
             else:
                 
-                print(f'Launch {account} account')
+                print(f'Launch {account} account {i+1}/{sum_acc}')
                 
                 #открывает телеграм аккаунт
                 os.startfile(f'{WORK_PATH}\\{account}')
                 time.sleep(15)
                 pa.click(*c_gram['tap_folder'])
-                time.sleep(5)
+                time.sleep(4)
                 logs(4, 'o', f'{account} launching')
                 
                 #выполняются квесты
                 roll_down(mode, var_list_quests)
-                logs(3, 'o', f'Квесты у {account} выполнены')
+                logs(3, 'o', f'All quests on {account} account done')
                 
                 #закрывается телеграм аккаунт
                 pa.click(*c_gram['exit_account'])     
                 var_list_account.remove(account) 
                 logs(3, 'o', f'{account} was close')
                 print(f'{account} was done')
+                time.sleep(2)
                 
     print('Все аккаунты сделаны')
     logs(3, 'o', 'Все аккаунты сделаны')
