@@ -175,12 +175,10 @@ def hexacore(mode):
     else:
         for i in range(11000):
             pa.click(*buttons_h['push'])
-            time.sleep(random.uniform(0.05,0.15))
+            time.sleep(random.uniform(0.03,0.1))
     
     pa.click(*c_gram['exit_quest'])
     time.sleep(1.5)
 
-def tabizoo(mode):
-    pa.click(1856, 200, duration=1)
     
 from main import logs
