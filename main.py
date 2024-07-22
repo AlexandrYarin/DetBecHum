@@ -3,9 +3,7 @@ import random
 import time
 import json
 import pyautogui as pa
-import sys
 from datetime import datetime as dt
-#from blum_game import blum_game_start
 from quests import blum, yescoin, pocket, snapster, hexacore, tabizoo
 
 
@@ -28,17 +26,8 @@ with open('jsons\\coordinates.json', 'r') as file: coor = json.load(file)
 accounts = q_a['accounts'] #словарь всех аккаунтов
 quests = q_a['quests']#словарь всех квестов
 work_list_account, work_list_quests = [elem for elem in accounts.values()][:-1], [elem for elem in quests.values()]
-
-
 c_gram = coor['telegram']
-c_text = coor['text_file']
-c_quests = coor['quests']
 
-buttons_b = c_quests['blum']
-buttons_p = c_quests['pocket']
-buttons_y = c_quests['yes']
-buttons_h = c_quests['hexacore']
-buttons_s = c_quests['snap']
 
 REGION_Q = (1550, 50, 40, 700) #область поиска квестов
 CONFIDENCE_Q = 0.9 #качество распознания квеста
@@ -92,12 +81,10 @@ def mode_check():
     
     while True:
         if mode == 'claim':
-            #print('CLAIM MODE ON')
             logs(4, 'o', 'mode accepted')
             return mode
         
         elif mode == 'farm':
-            #print('FARM MODE ON')
             logs(4, 'o', 'mode accepted')
             return mode
             
@@ -108,14 +95,18 @@ def mode_check():
 
 def function_params():
     
-    print('Какие аккаунты нужно пройти? Напиши цифрой через пробел')
+    print('Какие аккаунты нужно пройти? Напиши цифрой через пробел или тире')
     #выводит список аккаунтов
     for k, elem in accounts.items():
         print(f"{k}: {elem}")
     
     #запрашивает номера аккаунтов        
     list_needed_acc = input()
-    list_needed_acc_f = [accounts[elem] for elem in list_needed_acc.split(' ')]
+    if '-' in list_needed_acc:
+        raw_list = [i for i in range(int(list_needed_acc[0]), int(list_needed_acc[2])+1)]
+        list_needed_acc_f = [accounts[str(elem)] for elem in raw_list]
+    else:        
+        list_needed_acc_f = [accounts[elem] for elem in list_needed_acc.split(' ')]
     
     
     print('Какие квесты нужно пройти? Напиши цифрой через пробел')
