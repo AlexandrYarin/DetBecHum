@@ -506,3 +506,54 @@
 2024-07-22 10:32:29.076104 : USSUALLY : OTHER : all quests on amanda hart account done 
 2024-07-22 10:32:29.186865 : USSUALLY : OTHER : amanda hart was close 
 2024-07-22 10:32:31.204307 : USSUALLY : OTHER : все аккаунты сделаны 
+2024-07-22 17:35:52.975522 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-22 17:36:00.555365 : USSUALLY : OTHER : dawn miller will launch 
+2024-07-22 17:37:22.408097 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-22 17:37:26.996854 : USSUALLY : OTHER : dawn miller will launch 
+2024-07-22 17:37:46.303484 : SUCCESSFUL : OTHER : dawn miller launching 
+2024-07-22 17:37:46.316472 : USSUALLY : OTHER : roll_down starting 
+2024-07-22 17:38:36.050794 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-22 17:38:41.800764 : USSUALLY : OTHER : dawn miller will launch 
+2024-07-22 17:39:01.108178 : SUCCESSFUL : OTHER : dawn miller launching 
+2024-07-22 17:39:01.124606 : USSUALLY : OTHER : roll_down starting 
+2024-07-22 17:39:01.136329 : USSUALLY : DOGS : was delete from var_list 
+2024-07-22 17:43:52.409163 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-22 17:44:12.364312 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-22 17:44:16.919525 : USSUALLY : OTHER : dawn miller will launch 
+2024-07-22 17:44:36.214633 : SUCCESSFUL : OTHER : dawn miller launching 
+2024-07-22 17:44:36.230663 : USSUALLY : OTHER : roll_down starting 
+2024-07-22 17:44:36.241661 : USSUALLY : DOGS : was delete from var_list 
+2024-07-22 17:45:22.181794 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-22 17:45:25.871894 : USSUALLY : OTHER : dawn miller will launch 
+2024-07-22 17:45:45.178021 : SUCCESSFUL : OTHER : dawn miller launching 
+2024-07-22 17:45:45.194008 : USSUALLY : OTHER : roll_down starting 
+2024-07-22 17:45:45.207278 : USSUALLY : DOGS : was delete from var_list 
+2024-07-22 17:45:50.084033 : CRITICAL : DOGS : type error ---> 'dogs' 
+2024-07-22 17:45:50.100033 : CRITICAL : DOGS : some error during launch quest 
+2024-07-22 17:45:52.437107 : USSUALLY : OTHER : back to main position 
+2024-07-22 17:45:52.453107 : USSUALLY : OTHER : roll_down starting 
+2024-07-22 17:45:52.466004 : USSUALLY : TABIZOO : was delete from var_list 
+2024-07-22 17:45:58.513154 : SUCCESSFUL : TABIZOO : quest was done 
+2024-07-22 17:46:00.857418 : USSUALLY : OTHER : back to main position 
+2024-07-22 17:46:00.872423 : USSUALLY : OTHER : all quests on dawn miller account done 
+2024-07-22 17:46:00.981805 : USSUALLY : OTHER : dawn miller was close 
+2024-07-22 17:46:02.998866 : USSUALLY : OTHER : все аккаунты сделаны 
+2024-07-22 17:49:05.354170 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-22 17:49:09.653036 : USSUALLY : OTHER : stacy norton will launch 
+2024-07-22 17:49:29.055899 : SUCCESSFUL : OTHER : stacy norton launching 
+2024-07-22 17:49:29.068899 : USSUALLY : OTHER : roll_down starting 
+2024-07-22 17:49:29.079229 : USSUALLY : TABIZOO : was delete from var_list 
+2024-07-22 17:49:35.149052 : SUCCESSFUL : TABIZOO : quest was done 
+2024-07-22 17:49:37.485171 : USSUALLY : OTHER : back to main position 
+2024-07-22 17:49:37.497168 : USSUALLY : OTHER : roll_down starting 
+2024-07-22 17:49:37.507170 : USSUALLY : DOGS : was delete from var_list 
+2024-07-22 17:54:23.873895 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-22 17:54:28.782079 : USSUALLY : OTHER : amanda hart will launch 
+2024-07-22 17:54:48.077141 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-07-22 17:54:48.087791 : USSUALLY : OTHER : roll_down starting 
+2024-07-22 17:54:48.095676 : USSUALLY : SNAPSTER : was delete from var_list 
+2024-07-22 17:55:04.814713 : SUCCESSFUL : SNAPSTER : quest was done 
+2024-07-22 17:55:07.167870 : USSUALLY : OTHER : back to main position 
+2024-07-22 17:55:07.183870 : USSUALLY : OTHER : all quests on amanda hart account done 
+2024-07-22 17:55:07.311380 : USSUALLY : OTHER : amanda hart was close 
+2024-07-22 17:55:09.330165 : USSUALLY : OTHER : все аккаунты сделаны 

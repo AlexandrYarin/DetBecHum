@@ -8,7 +8,6 @@ from blum_game import blum_game_start
 with open('jsons\\coordinates.json', 'r') as file: coor = json.load(file)
 
 c_gram = coor['telegram']
-c_text = coor['text_file']
 c_quests = coor['quests']
 
 buttons_b = c_quests['blum']
@@ -16,6 +15,54 @@ buttons_p = c_quests['pocket']
 buttons_y = c_quests['yes']
 buttons_h = c_quests['hexacore']
 buttons_s = c_quests['snap']
+buttons_t = c_quests['tabizoo']
+buttons_d = c_quests['dogs']
+
+
+def dogs(mode):
+    pa.click(*buttons_d['start'], duration=0.5)
+    time.sleep(6)
+    pa.click(*c_gram['exit_quest'], duration=0.5)
+    time.sleep(1.5)
+
+
+def tabizoo(mode):
+    
+    dur = 0.5
+    
+    #start quest
+    pa.click(*buttons_t['start'], duration=dur)
+    pa.click(*buttons_t['start2'], duration=dur+2)
+    time.sleep(5)
+    
+    def basic():
+        pa.click(*buttons_t['checkin'], duration=dur)
+        pa.click(*buttons_t['checkin2'], duration=dur+0.5)
+        pa.click(*buttons_t['checkin_confirm'], duration=dur)
+        time.sleep(2)
+        pa.click(*buttons_t['claim'], duration=dur)
+        pa.click(*buttons_t['claim_confirm'], duration=dur)
+        time.sleep(2)
+    
+    def farm():
+        pa.click(*buttons_t['upgrade'], duration=dur)
+        pa.click(*buttons_t['upgrade2'], duration=dur+0.5)
+        pa.click(*buttons_t['upgrade_exit'], duration=dur+0.5)
+        time.sleep(2)
+    
+    if mode == "claim":
+        basic()
+        
+    elif mode == "farm":
+        farm()
+
+    else:
+        basic()
+        farm()     
+    
+    pa.click(*c_gram['exit_quest'])
+    time.sleep(1.5)
+    
 
 
 
@@ -128,7 +175,7 @@ def hexacore(mode):
     else:
         for i in range(11000):
             pa.click(*buttons_h['push'])
-            time.sleep(random.uniform(0.1,0.2))
+            time.sleep(random.uniform(0.05,0.15))
     
     pa.click(*c_gram['exit_quest'])
     time.sleep(1.5)

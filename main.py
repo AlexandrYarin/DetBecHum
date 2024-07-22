@@ -4,7 +4,7 @@ import time
 import json
 import pyautogui as pa
 from datetime import datetime as dt
-from quests import blum, yescoin, pocket, snapster, hexacore, tabizoo
+from quests import blum, yescoin, pocket, snapster, hexacore, tabizoo, dogs
 
 
 #------------------------/////----------------------------
@@ -17,7 +17,7 @@ pages = {
     'Blum':'find\\pages\\blum.png', 'PocketFi':'find\\pages\\pocket.png',
     'Hexacore Gaming Universe | AGO':'find\\pages\\hexacore.png',
     'Yescoin':'find\\pages\\yes.png', 'snapster trading bot':'find\\pages\\snapster.png',
-    'TabiZoo': 'find\\pages\\tabizoo.png'
+    'TabiZoo': 'find\\pages\\tabizoo.png', 'Dogs': 'find\\pages\\dogs.png'
         }
 
 with open('jsons\\q_a.json', 'r') as file: q_a = json.load(file)
@@ -40,7 +40,8 @@ function_dict = {
     'snapster trading bot': snapster,
     'Yescoin': yescoin,
     'Blum': blum,
-    'TabiZoo': tabizoo
+    'TabiZoo': tabizoo,
+    'Dogs': dogs
 }
 
 
@@ -66,6 +67,7 @@ def logs(type, name_quest, message):
         'h': 'HEXACORE',
         's': 'SNAPSTER',
         't': 'TABIZOO',
+        'd': 'DOGS',
         'o': 'OTHER'
     }
     
@@ -166,7 +168,7 @@ def roll_down(mode, list_of_quests):
         
         if flag:
             
-            if quest == 'Hexacore Gaming Universe | AGO':
+            if quest == 'Hexacore Gaming Universe | AGO' or 'TabiZoo' or 'Dogs':
                 time.sleep(1.5)
             else:
                 pa.click(*c_gram['menu'], duration=1)
