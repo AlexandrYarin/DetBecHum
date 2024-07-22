@@ -5,7 +5,7 @@ import json
 import pyautogui as pa
 import sys
 from datetime import datetime as dt
-from blum_game import blum_game_start
+#from blum_game import blum_game_start
 from quests import blum, yescoin, pocket, snapster, hexacore, tabizoo
 
 
@@ -13,7 +13,7 @@ from quests import blum, yescoin, pocket, snapster, hexacore, tabizoo
 #                КОНСТАНТЫ И ПЕРЕМЕННЫЕ
 #------------------------/////----------------------------
 
-WORK_PATH = 'C:\\Users\\AYarin.StreetArt\\Desktop\\telegram'
+WORK_PATH = 'C:\\Users\\AYarin.StreetArt\\Desktop\\accounts'
 
 pages = {
     'Blum':'find\\pages\\blum.png', 'PocketFi':'find\\pages\\pocket.png',
@@ -47,34 +47,34 @@ CONFIDENCE_Q = 0.9 #качество распознания квеста
 #                    ФУНКЦИИ КВЕСТОВ
 #------------------------/////----------------------------
 
-def blum(mode):
-    
-    pa.click(*buttons_b['start'])
-    time.sleep(random.randrange(15,20))
-    pa.click(*buttons_b['continue'])
-    time.sleep(4)
-    pa.click(*buttons_b['continue'])
-    time.sleep(4)
-    
-    if mode == 'claim':
-    
-        pa.click(buttons_b['claim-farming'])
-        time.sleep(3)
-        pa.click(buttons_b['claim-farming'])
-        time.sleep(2)
-    
-    else:
-        try:
-            blum_game_start()
-            logs(4, 'b', 'Blum is been through every game.')
-        except Exception as e:
-            logs(2, 'b', f'blum_game error >>>>> {e}')
-            
-        
-    
-    
-    pa.click(*c_gram['exit_quest'])
-    time.sleep(1.5)
+#def blum(mode):
+#    
+#    pa.click(*buttons_b['start'])
+#    time.sleep(random.randrange(15,20))
+#    pa.click(*buttons_b['continue'])
+#    time.sleep(4)
+#    pa.click(*buttons_b['continue'])
+#    time.sleep(4)
+#    
+#    if mode == 'claim':
+#    
+#        pa.click(buttons_b['claim-farming'])
+#        time.sleep(3)
+#        pa.click(buttons_b['claim-farming'])
+#        time.sleep(2)
+#    
+#    else:
+#        try:
+#            blum_game_start()
+#            logs(4, 'b', 'Blum is been through every game.')
+#        except Exception as e:
+#           logs(2, 'b', f'blum_game error >>>>> {e}')
+#            
+#        
+#    
+#    
+#    pa.click(*c_gram['exit_quest'])
+#    time.sleep(1.5)
     
     
 def yescoin(mode):

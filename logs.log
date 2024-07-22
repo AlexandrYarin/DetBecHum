@@ -478,3 +478,31 @@
 2024-07-18 10:37:42.114867 : USSUALLY : OTHER : квесты у stacy norton выполнены 
 2024-07-18 10:37:42.224484 : USSUALLY : OTHER : stacy norton was close 
 2024-07-18 10:37:42.235057 : USSUALLY : OTHER : все аккаунты сделаны 
+2024-07-22 10:18:07.952238 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-22 10:18:13.199098 : USSUALLY : OTHER : amanda hart will launch 
+2024-07-22 10:18:32.617388 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-07-22 10:18:32.631385 : USSUALLY : OTHER : roll_down starting 
+2024-07-22 10:18:32.641392 : USSUALLY : BLUM : was delete from var_list 
+2024-07-22 10:19:20.959185 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-22 10:19:26.952725 : USSUALLY : OTHER : amanda hart will launch 
+2024-07-22 10:19:46.252586 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-07-22 10:19:46.268273 : USSUALLY : OTHER : roll_down starting 
+2024-07-22 10:19:46.281913 : USSUALLY : BLUM : was delete from var_list 
+2024-07-22 10:19:54.931850 : USSUALLY : BLUM : quest restart 
+2024-07-22 10:19:54.947841 : CRITICAL : BLUM : type error ---> name 'buttons_b' is not defined 
+2024-07-22 10:19:54.956834 : CRITICAL : BLUM : some error during launch quest 
+2024-07-22 10:19:57.287076 : USSUALLY : OTHER : back to main position 
+2024-07-22 10:19:57.295429 : USSUALLY : OTHER : all quests on amanda hart account done 
+2024-07-22 10:19:57.405410 : USSUALLY : OTHER : amanda hart was close 
+2024-07-22 10:19:59.421962 : USSUALLY : OTHER : все аккаунты сделаны 
+2024-07-22 10:31:19.610391 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-22 10:31:26.579718 : USSUALLY : OTHER : amanda hart will launch 
+2024-07-22 10:31:45.874663 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-07-22 10:31:45.890663 : USSUALLY : OTHER : roll_down starting 
+2024-07-22 10:31:45.900655 : USSUALLY : BLUM : was delete from var_list 
+2024-07-22 10:31:54.560613 : USSUALLY : BLUM : quest restart 
+2024-07-22 10:32:26.720452 : SUCCESSFUL : BLUM : quest was done 
+2024-07-22 10:32:29.060793 : USSUALLY : OTHER : back to main position 
+2024-07-22 10:32:29.076104 : USSUALLY : OTHER : all quests on amanda hart account done 
+2024-07-22 10:32:29.186865 : USSUALLY : OTHER : amanda hart was close 
+2024-07-22 10:32:31.204307 : USSUALLY : OTHER : все аккаунты сделаны 

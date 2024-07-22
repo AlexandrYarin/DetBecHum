@@ -1,6 +1,22 @@
 import time
 import pyautogui as pa
 import random
+import json
+from blum_game import blum_game_start
+
+
+with open('jsons\\coordinates.json', 'r') as file: coor = json.load(file)
+
+c_gram = coor['telegram']
+c_text = coor['text_file']
+c_quests = coor['quests']
+
+buttons_b = c_quests['blum']
+buttons_p = c_quests['pocket']
+buttons_y = c_quests['yes']
+buttons_h = c_quests['hexacore']
+buttons_s = c_quests['snap']
+
 
 
 def blum(mode):
@@ -119,3 +135,5 @@ def hexacore(mode):
 
 def tabizoo(mode):
     pa.click(1856, 200, duration=1)
+    
+from main import logs
