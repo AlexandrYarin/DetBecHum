@@ -10,10 +10,6 @@ with open('jsons\\coordinates.json', 'r') as file: coor = json.load(file)
 
 pac_games = input('Сколько игр нужно сделать? >>> ')
 
-if pac_games is None:
-    pac = [5, 5]
-else:
-    pac = map(int, pac_games.split(' ')) #кол-во игр которое нужно сыграть
 
 c_gram = coor['telegram']
 c_quests = coor['quests']
@@ -74,7 +70,13 @@ def tabizoo(mode):
 
 
 
-def blum(mode, pac):
+def blum(mode, pac=None):
+    
+    if pac_games is None:
+        pac = [5, 5]
+    else:
+        pac = map(int, pac_games.split(' ')) #кол-во игр которое нужно сыграть
+    
     
     pa.click(*buttons_b['start'])
     time.sleep(random.randrange(15,20))
