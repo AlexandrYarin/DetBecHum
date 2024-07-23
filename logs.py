@@ -21,5 +21,5 @@ def logs(type, name_quest, message):
         'o': 'OTHER'
     }
     
-    with open('logs.log', 'a+') as file:
+    with open('logs.log', 'a+', encode='utf-8') as file:
         file.write(f'{dt.now()} : {type_dict[type]} : {quest_dict[name_quest.lower()]} : {message.lower()} \n')
