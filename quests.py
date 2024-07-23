@@ -3,6 +3,7 @@ import pyautogui as pa
 import random
 import json
 from blum_game import blum_game_start
+from logs import logs
 
 
 with open('jsons\\coordinates.json', 'r') as file: coor = json.load(file)
@@ -179,6 +180,3 @@ def hexacore(mode):
     
     pa.click(*c_gram['exit_quest'])
     time.sleep(1.5)
-
-    
-from main import logs

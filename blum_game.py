@@ -57,6 +57,3 @@ def blum_game_start():
         time.sleep(4)
         pa.click(*coor_b['continue'])
         time.sleep(4)
-
-
-from main import logs
