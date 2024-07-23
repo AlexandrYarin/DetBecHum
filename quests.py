@@ -25,7 +25,7 @@ buttons_d = c_quests['dogs']
 
 def dogs(mode):
     pa.click(*buttons_d['start'], duration=0.5)
-    time.sleep(6)
+    time.sleep(8)
     pa.click(*c_gram['exit_quest'], duration=0.5)
     time.sleep(1.5)
 
@@ -37,7 +37,7 @@ def tabizoo(mode):
     #start quest
     pa.click(*buttons_t['start'], duration=dur)
     pa.click(*buttons_t['start2'], duration=dur+2)
-    time.sleep(8)
+    time.sleep(10)
     
     def basic():
         pa.click(*buttons_t['checkin'], duration=dur)
