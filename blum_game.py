@@ -16,7 +16,6 @@ REGION = (1505, 250, 380, 610) #область работы бота
 OFFSET = 50 #смещение клика от найденных координат
 DELAY = (0.02, 0.05) #задержка между кликами
 CONFIDENCE = 0.6 #качество распознания
-PAC_GAMES = map(int, str(input('Сколько игр нужно сделать? >>> ')).split(' ')) #кол-во игр которое нужно сыграть
 GAME_BUTTON = coor_b['game_but'] #координаты кнопки начала игры
 FIRST_PLAY = coor_b['first_play'] #координаты кнопки первой игры
 SCROLL_BAR = coor_b['scroll_bar']
@@ -24,7 +23,7 @@ SCROLL_BAR = coor_b['scroll_bar']
 
 #-----------------/////-------------------
 
-def blum_game_start():
+def blum_game_start(pac):
     
     def find_star(end_time):
     
@@ -38,7 +37,7 @@ def blum_game_start():
         #заcыпание перд новой попыткой
         time.sleep(random.randrange(6,10))
     
-    for n_pack in PAC_GAMES:
+    for n_pack in pac:
         for i in range(n_pack):
             if i == 0:
                 pa.moveTo(*SCROLL_BAR, duration=0.5)

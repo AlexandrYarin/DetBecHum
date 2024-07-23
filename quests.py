@@ -5,6 +5,8 @@ import json
 from blum_game import blum_game_start
 from logs import logs
 
+PAC_GAMES = map(int, str(input('Сколько игр нужно сделать? >>> ')).split(' ')) #кол-во игр которое нужно сыграть
+
 
 with open('jsons\\coordinates.json', 'r') as file: coor = json.load(file)
 
@@ -67,7 +69,7 @@ def tabizoo(mode):
 
 
 
-def blum(mode):
+def blum(mode, pac='default'):
     
     pa.click(*buttons_b['start'])
     time.sleep(random.randrange(15,20))
@@ -84,8 +86,13 @@ def blum(mode):
         time.sleep(2)
     
     else:
+        if pac == 'default':
+            pac = [3, 3]
+        else:
+            pac = PAC_GAMES
+        
         try:
-            blum_game_start()
+            blum_game_start(pac)
             logs(4, 'b', 'Blum is been through every game.')
         except Exception as e:
             logs(2, 'b', f'blum_game error >>>>> {e}')
