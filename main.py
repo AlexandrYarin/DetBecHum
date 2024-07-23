@@ -130,7 +130,35 @@ def find_quests(name_quest):
                 logs(1, name_quest[0], 'Page not found >>>> e')
                 return None
 
-def roll_down(mode, list_of_quests):
+
+def create_basic_dict():
+    #списки квестов и аккаунтов
+    acc_list = [elem.replace('.lnk', '')for elem in os.listdir(WORK_PATH)]
+
+    with open('jsons/q_a.json', 'r') as f: data = json.load(f)
+    quest_list = list(data['quests'].values())
+
+    #создание нулевого словаря
+    basic_dict ={}
+    for acc in acc_list:
+        for quest in quest_list:
+            basic_dict.setdefault(acc, {})
+
+    for key in basic_dict.keys():
+        for quest in quest_list:
+            basic_dict[key][quest] = []
+            
+    with open('jsons/stat.json', 'w') as file: json.dump(basic_dict, file)
+    
+answer = input('Обнулить статистику?(y/n)')
+
+if answer == 'y':
+    stat_dict = create_basic_dict()
+elif answer == 'n':
+    with open('jsons/stat.json', 'r') as file: stat_dict = json.load(file)
+
+
+def roll_down(mode, list_of_quests, account):
     
     logs(3, 'o', 'roll_down starting')
         
@@ -169,7 +197,9 @@ def roll_down(mode, list_of_quests):
             try:
             
                 function_dict[quest](mode)
+                stat_dict[account][quest].append(mode[0].upper())
                 logs(4, quest[0], 'quest was done')
+                
         
             except Exception as e:
             
@@ -245,7 +275,7 @@ def main_function(mode, work_list_account, work_list_quests):
                 logs(4, 'o', f'{account} launching')
                 
                 #выполняются квесты
-                roll_down(mode, var_list_quests)
+                roll_down(mode, var_list_quests, account)
                 logs(3, 'o', f'All quests on {account} account done')
                 
                 #закрывается телеграм аккаунт
@@ -263,8 +293,11 @@ def main_function(mode, work_list_account, work_list_quests):
 
 print('Введи режим работы и способ прохожденияя квестов')
 
-
-
 mode = mode_check()
 
-main_function(mode, work_list_account, work_list_quests)
+try:
+    main_function(mode, work_list_account, work_list_quests)
+except Exception:
+    print('Error')
+finally:
+    with open('jsons/stat.json', 'w') as file: json.dump(stat_dict, file)
