@@ -37,7 +37,7 @@ def tabizoo(mode):
     #start quest
     pa.click(*buttons_t['start'], duration=dur)
     pa.click(*buttons_t['start2'], duration=dur+2)
-    time.sleep(5)
+    time.sleep(8)
     
     def basic():
         pa.click(*buttons_t['checkin'], duration=dur)

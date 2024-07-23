@@ -70,6 +70,10 @@ def mode_check():
         elif mode == 'farm':
             logs(4, 'o', 'mode accepted')
             return mode
+        
+        elif mode == 'claim&farm':
+            logs(4, 'o', 'mode accepted')
+            return mode
             
         else:
             mode = input('Напиши верное название мода    ')
