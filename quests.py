@@ -70,13 +70,14 @@ def tabizoo(mode):
 
 
 
-def blum(mode, pac=None):
+def blum(mode):
     
-    if pac_games is None:
+    if pac_games == 'd':
         pac = [5, 5]
     else:
-        pac = map(int, pac_games.split(' ')) #кол-во игр которое нужно сыграть
+        pac = list(map(int, pac_games.split(' '))) #кол-во игр которое нужно сыграть
     
+    logs(2, 'o', f'games -> {pac}')
     
     pa.click(*buttons_b['start'])
     time.sleep(random.randrange(15,20))
@@ -91,7 +92,7 @@ def blum(mode, pac=None):
         time.sleep(3)
         pa.click(buttons_b['claim-farming'])
         time.sleep(2)
-        
+    else:        
         try:
             blum_game_start(pac)
             logs(4, 'b', 'Blum is been through every game.')

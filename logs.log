@@ -557,3 +557,72 @@
 2024-07-22 17:55:07.183870 : USSUALLY : OTHER : all quests on amanda hart account done 
 2024-07-22 17:55:07.311380 : USSUALLY : OTHER : amanda hart was close 
 2024-07-22 17:55:09.330165 : USSUALLY : OTHER : ��� �������� ������� 
+2024-07-23 14:43:37.785629 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-23 14:43:41.864794 : USSUALLY : OTHER : amanda hart will launch 
+2024-07-23 14:44:47.617682 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-23 14:44:51.489338 : USSUALLY : OTHER : amanda hart will launch 
+2024-07-23 14:45:10.890002 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-07-23 14:45:10.901993 : USSUALLY : OTHER : roll_down starting 
+2024-07-23 14:45:10.910430 : USSUALLY : BLUM : was delete from var_list 
+2024-07-23 14:45:40.808088 : SUCCESSFUL : BLUM : quest was done 
+2024-07-23 14:45:43.147343 : USSUALLY : OTHER : back to main position 
+2024-07-23 14:45:43.157347 : USSUALLY : OTHER : all quests on amanda hart account done 
+2024-07-23 14:45:43.268339 : USSUALLY : OTHER : amanda hart was close 
+2024-07-23 14:45:45.287307 : USSUALLY : OTHER : все аккаунты сделаны 
+2024-07-23 14:47:22.382648 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-23 14:47:27.168520 : USSUALLY : OTHER : amanda hart will launch 
+2024-07-23 14:47:46.486608 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-07-23 14:47:46.502622 : USSUALLY : OTHER : roll_down starting 
+2024-07-23 14:47:46.513952 : USSUALLY : BLUM : was delete from var_list 
+2024-07-23 14:48:15.738384 : WARNING : BLUM : blum_game error >>>>> invalid literal for int() with base 10: '' 
+2024-07-23 14:48:17.352517 : SUCCESSFUL : BLUM : quest was done 
+2024-07-23 14:48:19.692138 : USSUALLY : OTHER : back to main position 
+2024-07-23 14:48:19.702137 : USSUALLY : OTHER : all quests on amanda hart account done 
+2024-07-23 14:48:19.821528 : USSUALLY : OTHER : amanda hart was close 
+2024-07-23 14:48:21.830729 : USSUALLY : OTHER : все аккаунты сделаны 
+2024-07-23 14:50:57.519640 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-23 14:51:01.695241 : USSUALLY : OTHER : amanda hart will launch 
+2024-07-23 14:51:20.988267 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-07-23 14:51:21.005269 : USSUALLY : OTHER : roll_down starting 
+2024-07-23 14:51:21.014257 : USSUALLY : BLUM : was delete from var_list 
+2024-07-23 14:51:25.888610 : WARNING : OTHER : games -> <map object at 0x000001ec783658a0> 
+2024-07-23 14:51:49.259748 : WARNING : BLUM : blum_game error >>>>> invalid literal for int() with base 10: '' 
+2024-07-23 14:51:50.879476 : SUCCESSFUL : BLUM : quest was done 
+2024-07-23 14:51:53.226780 : USSUALLY : OTHER : back to main position 
+2024-07-23 14:51:53.235771 : USSUALLY : OTHER : all quests on amanda hart account done 
+2024-07-23 14:51:53.347232 : USSUALLY : OTHER : amanda hart was close 
+2024-07-23 14:51:55.365851 : USSUALLY : OTHER : все аккаунты сделаны 
+2024-07-23 14:53:12.440560 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-23 14:53:16.414950 : USSUALLY : OTHER : amanda hart will launch 
+2024-07-23 14:53:35.712111 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-07-23 14:53:35.728111 : USSUALLY : OTHER : roll_down starting 
+2024-07-23 14:53:35.742097 : USSUALLY : BLUM : was delete from var_list 
+2024-07-23 14:53:40.612613 : CRITICAL : BLUM : type error ---> invalid literal for int() with base 10: '' 
+2024-07-23 14:53:40.627597 : CRITICAL : BLUM : some error during launch quest 
+2024-07-23 14:53:42.971774 : USSUALLY : OTHER : back to main position 
+2024-07-23 14:53:42.988774 : USSUALLY : OTHER : all quests on amanda hart account done 
+2024-07-23 14:53:43.099470 : USSUALLY : OTHER : amanda hart was close 
+2024-07-23 14:53:45.117687 : USSUALLY : OTHER : все аккаунты сделаны 
+2024-07-23 14:55:16.438477 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-23 14:55:18.891803 : USSUALLY : OTHER : amanda hart will launch 
+2024-07-23 14:55:38.187293 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-07-23 14:55:38.201286 : USSUALLY : OTHER : roll_down starting 
+2024-07-23 14:55:38.210763 : USSUALLY : BLUM : was delete from var_list 
+2024-07-23 14:55:43.086465 : CRITICAL : BLUM : type error ---> invalid literal for int() with base 10: '' 
+2024-07-23 14:55:43.102507 : CRITICAL : BLUM : some error during launch quest 
+2024-07-23 14:55:45.447935 : USSUALLY : OTHER : back to main position 
+2024-07-23 14:55:45.463935 : USSUALLY : OTHER : all quests on amanda hart account done 
+2024-07-23 14:55:45.574581 : USSUALLY : OTHER : amanda hart was close 
+2024-07-23 14:55:47.592400 : USSUALLY : OTHER : все аккаунты сделаны 
+2024-07-23 14:58:20.966130 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-23 14:58:23.492428 : USSUALLY : OTHER : amanda hart will launch 
+2024-07-23 14:58:42.786307 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-07-23 14:58:42.795522 : USSUALLY : OTHER : roll_down starting 
+2024-07-23 14:58:42.803330 : USSUALLY : BLUM : was delete from var_list 
+2024-07-23 14:58:47.684802 : WARNING : OTHER : games -> [5, 5] 
+2024-07-23 15:00:03.540481 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-23 15:00:08.393224 : USSUALLY : OTHER : amanda scott will launch 
+2024-07-23 15:00:27.774955 : SUCCESSFUL : OTHER : amanda scott launching 
+2024-07-23 15:00:27.788956 : USSUALLY : OTHER : roll_down starting 
+2024-07-23 15:00:27.797953 : USSUALLY : BLUM : was delete from var_list 
+2024-07-23 15:00:32.675844 : WARNING : OTHER : games -> [1, 1] 

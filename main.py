@@ -12,7 +12,7 @@ from quests import blum, yescoin, pocket, snapster, hexacore, tabizoo, dogs
 #                КОНСТАНТЫ И ПЕРЕМЕННЫЕ
 #------------------------/////----------------------------
 
-WORK_PATH = 'C:\\Users\\ya\\Desktop\\accounts'
+WORK_PATH = 'C:\\Users\\AYarin.StreetArt\\Desktop\\accounts'
 
 pages = {
     'Blum':'find\\pages\\blum.png', 'PocketFi':'find\\pages\\pocket.png',
