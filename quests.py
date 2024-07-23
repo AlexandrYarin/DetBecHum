@@ -103,7 +103,7 @@ def yescoin(mode):
     
     time.sleep(2)
     pa.click(*buttons_y['start2'], duration=1)
-    time.sleep(19)
+    time.sleep(15)
     
     if mode == 'claim':
         pa.click(*buttons_y['get_coin'])
