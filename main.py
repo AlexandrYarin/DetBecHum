@@ -74,7 +74,7 @@ def mode_check():
 
 def function_params():
     
-    print('Какие аккаунты нужно пройти? Напиши цифрой через пробел или тире')
+    print('Какие аккаунты нужно пройти?')
     #выводит список аккаунтов
     for k, elem in accounts.items():
         print(f"{k}: {elem}")
@@ -184,21 +184,16 @@ def roll_down(mode, list_of_quests):
 
 
 #Функция по очереди открывает квесты и выполняет их
-def main_function(type_pass, mode, work_list_account, work_list_quests):
+def main_function(mode, work_list_account, work_list_quests):
     
-    print(f'Включен {type_pass.upper()} режим. Квесты будут {mode.upper()}-иться')
+    print(f'Квесты будут {mode.upper()}-иться')
     
-    if type_pass == 'm':
+    work_list_account, work_list_quests = function_params()
         
-        work_list_account, work_list_quests = function_params()
-        
-        if 'ALL' in work_list_account:
-            work_list_account = list(accounts.values())[:-1]
+    if 'ALL' in work_list_account:
+        work_list_account = list(accounts.values())[:-1]
             
-        var_list_account, var_list_quests = work_list_account.copy(), work_list_quests.copy()
-        
-    else:
-        var_list_account, var_list_quests = work_list_account.copy(), work_list_quests.copy()
+    var_list_account, var_list_quests = work_list_account.copy(), work_list_quests.copy()
 
     
     
@@ -260,6 +255,8 @@ def main_function(type_pass, mode, work_list_account, work_list_quests):
 
 print('Введи режим работы и способ прохожденияя квестов')
 
-type_pass, mode = input('Вручную(m) или автоматически(a=default)? ').lower(), mode_check()
 
-main_function(type_pass, mode, work_list_account, work_list_quests)
+
+mode = mode_check()
+
+main_function(mode, work_list_account, work_list_quests)

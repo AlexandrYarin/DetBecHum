@@ -92,12 +92,16 @@ def blum(mode):
         time.sleep(3)
         pa.click(buttons_b['claim-farming'])
         time.sleep(2)
-    else:        
+    elif mode == 'farm':        
+        
         try:
             blum_game_start(pac)
             logs(4, 'b', 'Blum is been through every game.')
         except Exception as e:
             logs(2, 'b', f'blum_game error >>>>> {e}')
+    
+    else:
+        pass
             
         
     
@@ -121,7 +125,7 @@ def yescoin(mode):
         pa.click(*buttons_y['exit_daily'])
         time.sleep(2)
         
-    else:
+    elif mode == 'farm':
         
         pa.click(*buttons_y['get_coin'])
         time.sleep(3)
@@ -135,6 +139,8 @@ def yescoin(mode):
             time.sleep(4)
             pa.click(*buttons_y['back'])
             time.sleep(80)
+    else:
+        pass
             
     pa.click(*c_gram['exit_quest'])
     time.sleep(1.5)
@@ -176,16 +182,29 @@ def hexacore(mode):
     pa.click(*buttons_h['start'])
     time.sleep(7)
     
-    if mode == 'claim':
+    def claim():
+        pa.moveTo(*buttons_b['scroll_bar'], duration=0.5)
+        pa.drag(0, 100, button='left', duration=0.7)
         pa.click(*buttons_h['claim'])
         time.sleep(3)
         pa.click(*buttons_h['claim2'])
         pa.sleep(2)
     
-    else:
+    def farm():
         for i in range(11000):
             pa.click(*buttons_h['push'])
             time.sleep(random.uniform(0.03,0.1))
+        time.sleep(1)
+        
+    if mode == 'claim':
+        claim()
+    
+    elif mode == 'farm':
+        farm()
+
+    else:
+        claim()
+        farm()
     
     pa.click(*c_gram['exit_quest'])
     time.sleep(1.5)
