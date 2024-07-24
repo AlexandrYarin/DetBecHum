@@ -20,7 +20,7 @@ GAME_BUTTON = coor_b['game_but'] #координаты кнопки начала
 FIRST_PLAY = coor_b['first_play'] #координаты кнопки первой игры
 SCROLL_BAR = coor_b['scroll_bar']
 N_PAC = input('number of games?')
-n_pac = map(int, N_PAC.split(' '))
+pac = map(int, N_PAC.split(' '))
 
 #-----------------/////-------------------
 
@@ -63,4 +63,4 @@ def blum_game_start(pac):
             time.sleep(4)
 
 
-blum_game_start(n_pac)
+blum_game_start(pac)
