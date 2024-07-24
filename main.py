@@ -155,8 +155,6 @@ def create_basic_dict():
     with open('jsons/stat.json', 'w') as file: json.dump(basic_dict, file)
     
 
-answer = input('Обнулить статистику?(y/n)')
-
 
 while True:
     
