@@ -6,6 +6,7 @@ import pyautogui as pa
 from datetime import datetime as dt
 from logs import logs
 from quests import blum, yescoin, pocket, snapster, hexacore, tabizoo, dogs
+pa.FAILSAFE = False
 
 
 #------------------------/////----------------------------
