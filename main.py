@@ -12,17 +12,20 @@ from quests import blum, yescoin, pocket, snapster, hexacore, tabizoo, dogs
 #                КОНСТАНТЫ И ПЕРЕМЕННЫЕ
 #------------------------/////----------------------------
 
-direct = input('На каком компе запуск?')
-if direct == 'remote':
+direct = input('Which pc(r/l)')
+if direct == 'r':
     WORK_PATH = 'C:\\Users\\User_25\\Desktop\\accounts'
-else:
+elif direct == 'l':
     WORK_PATH = 'C:\\Users\\AYarin.StreetArt\\Desktop\\accounts'
+else:
+    print('wrong name pc')
+    raise ValueError
 
 pages = {
-    'Blum':'find\\pages\\blum.png', 'PocketFi':'find\\pages\\pocket.png',
-    'Hexacore Gaming Universe | AGO':'find\\pages\\hexacore.png',
-    'Yescoin':'find\\pages\\yes.png', 'snapster trading bot':'find\\pages\\snapster.png',
-    'TabiZoo': 'find\\pages\\tabizoo.png', 'Dogs': 'find\\pages\\dogs.png'
+    'Blum':'find\\blum.png', 'PocketFi':'find\\pocket.png',
+    'Hexacore Gaming Universe | AGO':'find\\hexacore.png',
+    'Yescoin':'find\\yes.png', 'snapster trading bot':'find\\snapster.png',
+    'TabiZoo': 'find\\tabizoo.png', 'Dogs': 'find\\dogs.png'
         }
 
 with open('jsons\\q_a.json', 'r') as file: q_a = json.load(file)
@@ -127,10 +130,10 @@ def find_quests(name_quest):
             time.sleep(5)
         
             if count <= -10:
-                logs(1, name_quest[0], 'Page not found >>>> e')
+                logs(1, name_quest[0], f'Page not found >>>> {e}')
                 return None
 
-
+#--------------СТАТИСТИКА-------------------
 def create_basic_dict():
     #списки квестов и аккаунтов
     acc_list = [elem.replace('.lnk', '')for elem in os.listdir(WORK_PATH)]
@@ -150,12 +153,24 @@ def create_basic_dict():
             
     with open('jsons/stat.json', 'w') as file: json.dump(basic_dict, file)
     
-#answer = input('Обнулить статистику?(y/n)')
 
-#if answer == 'y':
-#    stat_dict = create_basic_dict()
-#elif answer == 'n':
-#    with open('jsons/stat.json', 'r') as file: stat_dict = json.load(file)
+answer = input('Обнулить статистику?(y/n)')
+
+
+while True:
+    
+    answer=input('Обнулить статистику?(y/n)')
+    if answer == 'y':
+        stat_dict = create_basic_dict()
+        stat_dict
+        break
+    elif answer == 'n':
+        
+        with open('jsons/stat.json', 'r') as file: stat_dict = json.load(file)
+        break
+    else:
+        print('write correct argument ---> y or n')
+#--------------------------------------------    
 
 
 def roll_down(mode, list_of_quests, account):
@@ -197,7 +212,7 @@ def roll_down(mode, list_of_quests, account):
             try:
             
                 function_dict[quest](mode)
-                #stat_dict[account][quest].append(mode[0].upper())
+                stat_dict[account][quest].append(mode[0].upper())
                 logs(4, quest[0], 'quest was done')
                 
         
@@ -205,6 +220,9 @@ def roll_down(mode, list_of_quests, account):
             
                 logs(1, quest[0], f'type error ---> {e}')
                 logs(1, quest[0], 'some error during launch quest')
+        else:
+            print('Квест не был найден')
+            logs('c', 'o', f'{quest} was not found')
             #-------------------------------------
         
         #возвращается в исходное положение
@@ -295,9 +313,19 @@ print('Введи режим работы и способ прохождения
 
 mode = mode_check()
 
-#try:
-main_function(mode, work_list_account, work_list_quests)
-#except Exception:
-#    print('Error')
-#finally:
-#    with open('jsons/stat.json', 'w') as file: json.dump(stat_dict, file)
+try:
+    main_function(mode, work_list_account, work_list_quests)
+except Exception:
+    print('Error')
+finally:
+    
+    while True:
+        
+        answer2 = input('Сохранить в статистику пройденные квесты (y/n) ?')
+        if answer2 == 'y':
+            with open('jsons/stat.json', 'w') as file: json.dump(stat_dict, file)
+            break
+        elif answer2 == 'n':
+            break
+        else:
+            print('Write coorect argument ---> y or n')
