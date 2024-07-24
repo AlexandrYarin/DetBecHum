@@ -40,6 +40,7 @@ def blum_game_start(pac):
     for n_pack in pac:
         for i in range(n_pack):
             if i == 0:
+                #тянет scroll bar и наимает на игру
                 pa.moveTo(*SCROLL_BAR, duration=0.5)
                 pa.drag(0, 100, button='left', duration=0.7)
                 pa.click(*FIRST_PLAY, duration=0.7)
@@ -48,11 +49,14 @@ def blum_game_start(pac):
             end_time = time.time() + 28
             find_star(end_time)
         
-        pa.click(*c_gram['exit_quest'], duration=0.5)
-        time.sleep(1)
-        pa.click(*coor_b['start'], duration=0.5)
-        time.sleep(random.randrange(15,20))
-        pa.click(*coor_b['continue'])
-        time.sleep(4)
-        pa.click(*coor_b['continue'])
-        time.sleep(4)
+        if n_pack == pac[-1] and i == n_pack -1:
+            pass
+        else:
+            pa.click(*c_gram['exit_quest'], duration=0.5)
+            time.sleep(1)
+            pa.click(*coor_b['start'], duration=0.5)
+            time.sleep(random.randrange(15,20))
+            pa.click(*coor_b['continue'])
+            time.sleep(4)
+            pa.click(*coor_b['continue'])
+            time.sleep(4)

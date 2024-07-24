@@ -153,9 +153,8 @@ def pocket(mode):
     pa.click(*buttons_p['start'], duration=1)
     time.sleep(7)
     
-    for i in range(3):
-        pa.click(*buttons_p['claim'], duration=0.3)
-        time.sleep(0.5)
+    for i in range(3):pa.click(*buttons_p['claim'], duration=0.3)
+    
     time.sleep(1.5)
     pa.click(*buttons_p['tasks'])
     time.sleep(1.5)

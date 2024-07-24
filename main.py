@@ -14,7 +14,7 @@ from quests import blum, yescoin, pocket, snapster, hexacore, tabizoo, dogs
 
 direct = input('На каком компе запуск?')
 if direct == 'remote':
-    WORK_PATH = 'C:\\Users\\ya\\Desktop\\accounts'
+    WORK_PATH = 'C:\\Users\\User_25\\Desktop\\accounts'
 else:
     WORK_PATH = 'C:\\Users\\AYarin.StreetArt\\Desktop\\accounts'
 
