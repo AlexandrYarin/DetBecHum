@@ -150,12 +150,12 @@ def create_basic_dict():
             
     with open('jsons/stat.json', 'w') as file: json.dump(basic_dict, file)
     
-answer = input('Обнулить статистику?(y/n)')
+#answer = input('Обнулить статистику?(y/n)')
 
-if answer == 'y':
-    stat_dict = create_basic_dict()
-elif answer == 'n':
-    with open('jsons/stat.json', 'r') as file: stat_dict = json.load(file)
+#if answer == 'y':
+#    stat_dict = create_basic_dict()
+#elif answer == 'n':
+#    with open('jsons/stat.json', 'r') as file: stat_dict = json.load(file)
 
 
 def roll_down(mode, list_of_quests, account):
@@ -197,7 +197,7 @@ def roll_down(mode, list_of_quests, account):
             try:
             
                 function_dict[quest](mode)
-                stat_dict[account][quest].append(mode[0].upper())
+                #stat_dict[account][quest].append(mode[0].upper())
                 logs(4, quest[0], 'quest was done')
                 
         
@@ -216,7 +216,7 @@ def roll_down(mode, list_of_quests, account):
         logs(3, 'o', 'back to main position')
         
     if len(list_of_quests) > 0:
-        roll_down(mode, list_of_quests)
+        roll_down(mode, list_of_quests, account)
     
 
 
@@ -295,9 +295,9 @@ print('Введи режим работы и способ прохождения
 
 mode = mode_check()
 
-try:
-    main_function(mode, work_list_account, work_list_quests)
-except Exception:
-    print('Error')
-finally:
-    with open('jsons/stat.json', 'w') as file: json.dump(stat_dict, file)
+#try:
+main_function(mode, work_list_account, work_list_quests)
+#except Exception:
+#    print('Error')
+#finally:
+#    with open('jsons/stat.json', 'w') as file: json.dump(stat_dict, file)

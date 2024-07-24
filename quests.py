@@ -42,10 +42,10 @@ def tabizoo(mode):
     def basic():
         pa.click(*buttons_t['checkin'], duration=dur)
         pa.click(*buttons_t['checkin2'], duration=dur+0.5)
-        pa.click(*buttons_t['checkin_confirm'], duration=dur)
+        pa.click(*buttons_t['checkin_confirm'], duration=dur+0.5)
         time.sleep(2)
-        pa.click(*buttons_t['claim'], duration=dur)
-        pa.click(*buttons_t['claim_confirm'], duration=dur)
+        pa.click(*buttons_t['claim'], duration=dur+0.5)
+        pa.click(*buttons_t['claim_confirm'], duration=dur+0.5)
         time.sleep(2)
     
     def farm():
@@ -153,7 +153,9 @@ def pocket(mode):
     pa.click(*buttons_p['start'], duration=1)
     time.sleep(7)
     
-    for i in range(3): pa.click(*buttons_p['claim'], interval=1)
+    for i in range(3):
+        pa.click(*buttons_p['claim'], duration=0.3)
+        time.sleep(0.5)
     time.sleep(1.5)
     pa.click(*buttons_p['tasks'])
     time.sleep(1.5)
