@@ -182,14 +182,31 @@ def hexacore(mode):
     
     pa.click(*buttons_h['start'])
     time.sleep(7)
+    d= 0.5
     
     def claim():
-        pa.moveTo(*buttons_b['scroll_bar'], duration=0.5)
+        
+        pa.moveTo(*buttons_h['scroll_bar'], duration=d)
         pa.drag(0, 100, button='left', duration=0.7)
-        pa.click(*buttons_h['claim'])
-        time.sleep(3)
-        pa.click(*buttons_h['claim2'])
-        pa.sleep(2)
+        #daily button
+        pa.click(*buttons_h['daily'], duration=d)
+        pa.moveTo(*buttons_h['scroll_bar'], duration=d)
+        pa.drag(0, 100, button='left', duration=0.7)
+        #daily button2
+        pa.click(*buttons_h['daily2'], duration=d)
+        time.sleep(2)
+        #gotit
+        pa.click(1685, 640)
+        time.sleep(2)
+        
+        #-------------STOP------------------
+        #pa.moveTo(*buttons_b['scroll_bar'], duration=0.5)
+        #pa.drag(0, 100, button='left', duration=0.7)
+        #pa.click(*buttons_h['claim'])
+        #time.sleep(3)
+        #pa.click(*buttons_h['claim2'])
+        #pa.sleep(2)
+        #-------------STOP------------------
     
     def farm():
         for i in range(11000):

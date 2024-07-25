@@ -626,3 +626,14 @@
 2024-07-23 15:00:27.788956 : USSUALLY : OTHER : roll_down starting 
 2024-07-23 15:00:27.797953 : USSUALLY : BLUM : was delete from var_list 
 2024-07-23 15:00:32.675844 : WARNING : OTHER : games -> [1, 1] 
+2024-07-25 13:26:01.807276 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-25 13:26:05.572685 : USSUALLY : OTHER : amanda hart will launch 
+2024-07-25 13:26:24.876297 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-07-25 13:26:24.887292 : USSUALLY : OTHER : roll_down starting 
+2024-07-25 13:26:24.897292 : USSUALLY : HEXACORE : was delete from var_list 
+2024-07-25 13:26:47.062007 : CRITICAL : HEXACORE : type error ---> 'amanda hart' 
+2024-07-25 13:26:47.079016 : CRITICAL : HEXACORE : some error during launch quest 
+2024-07-25 13:26:49.423828 : USSUALLY : OTHER : back to main position 
+2024-07-25 13:26:49.440358 : USSUALLY : OTHER : all quests on amanda hart account done 
+2024-07-25 13:26:49.551149 : USSUALLY : OTHER : amanda hart was close 
+2024-07-25 13:26:51.569556 : USSUALLY : OTHER : все аккаунты сделаны 
