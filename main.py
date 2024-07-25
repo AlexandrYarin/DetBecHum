@@ -15,7 +15,7 @@ pa.FAILSAFE = False
 
 direct = input('Which pc(r/l)')
 if direct == 'r':
-    WORK_PATH = 'C:\\Users\\User_25\\Desktop\\accounts'
+    WORK_PATH = 'C:\\Users\\User_29\\Desktop\\accounts'
 elif direct == 'l':
     WORK_PATH = 'C:\\Users\\AYarin.StreetArt\\Desktop\\accounts'
 else:
@@ -160,8 +160,8 @@ while True:
     
     answer=input('Обнулить статистику?(y/n)')
     if answer == 'y':
-        stat_dict = create_basic_dict()
-        stat_dict
+        create_basic_dict()
+        with open('jsons/stat.json', 'r') as file: stat_dict = json.load(file)
         break
     elif answer == 'n':
         
