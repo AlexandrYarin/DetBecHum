@@ -150,7 +150,7 @@ def create_basic_dict():
 
     for key in basic_dict.keys():
         for quest in quest_list:
-            basic_dict[key][quest] = []
+            basic_dict[key][quest] = ''
             
     with open('jsons/stat.json', 'w') as file: json.dump(basic_dict, file)
     
@@ -211,7 +211,7 @@ def roll_down(mode, list_of_quests, account):
             try:
             
                 function_dict[quest](mode)
-                stat_dict[account][quest].append(mode[0].upper())
+                stat_dict[account][quest] = stat_dict[account][quest] + f'{mode[0].upper()}'
                 logs(4, quest[0], 'quest was done')
                 
         

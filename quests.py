@@ -209,7 +209,7 @@ def hexacore(mode):
         #-------------STOP------------------
     
     def farm():
-        for i in range(11000):
+        for i in range(1000):
             pa.click(*buttons_h['push'])
             time.sleep(random.uniform(0.03,0.1))
         time.sleep(1)
