@@ -652,3 +652,91 @@
 2024-07-29 10:49:41.534892 : USSUALLY : OTHER : all quests on amanda hart account done 
 2024-07-29 10:49:41.644453 : USSUALLY : OTHER : amanda hart was close 
 2024-07-29 10:49:43.655518 : USSUALLY : OTHER : все аккаунты сделаны 
+2024-07-29 11:09:36.255919 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-29 11:09:47.999827 : USSUALLY : OTHER : haley gallagher will launch 
+2024-07-29 11:10:07.299902 : SUCCESSFUL : OTHER : haley gallagher launching 
+2024-07-29 11:10:07.315943 : USSUALLY : OTHER : roll_down starting 
+2024-07-29 11:10:07.331943 : USSUALLY : HEXACORE : was delete from var_list 
+2024-07-29 11:10:19.320098 : CRITICAL : HEXACORE : type error ---> 'store' 
+2024-07-29 11:10:19.328949 : CRITICAL : HEXACORE : some error during launch quest 
+2024-07-29 11:10:21.652263 : USSUALLY : OTHER : back to main position 
+2024-07-29 11:10:21.664266 : USSUALLY : OTHER : all quests on haley gallagher account done 
+2024-07-29 11:10:21.782422 : USSUALLY : OTHER : haley gallagher was close 
+2024-07-29 11:10:23.799991 : USSUALLY : OTHER : все аккаунты сделаны 
+2024-07-29 11:11:02.887215 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-29 11:11:05.887305 : USSUALLY : OTHER : haley gallagher will launch 
+2024-07-29 11:11:25.199957 : SUCCESSFUL : OTHER : haley gallagher launching 
+2024-07-29 11:11:25.212957 : USSUALLY : OTHER : roll_down starting 
+2024-07-29 11:11:25.224397 : USSUALLY : HEXACORE : was delete from var_list 
+2024-07-29 11:11:37.227278 : CRITICAL : HEXACORE : type error ---> 'store' 
+2024-07-29 11:11:37.236275 : CRITICAL : HEXACORE : some error during launch quest 
+2024-07-29 11:11:39.552476 : USSUALLY : OTHER : back to main position 
+2024-07-29 11:11:39.561476 : USSUALLY : OTHER : all quests on haley gallagher account done 
+2024-07-29 11:11:39.688477 : USSUALLY : OTHER : haley gallagher was close 
+2024-07-29 11:11:41.707482 : USSUALLY : OTHER : все аккаунты сделаны 
+2024-07-29 11:13:57.461879 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-29 11:14:03.181547 : USSUALLY : OTHER : haley gallagher will launch 
+2024-07-29 11:14:22.478529 : SUCCESSFUL : OTHER : haley gallagher launching 
+2024-07-29 11:14:22.494541 : USSUALLY : OTHER : roll_down starting 
+2024-07-29 11:14:22.506526 : USSUALLY : HEXACORE : was delete from var_list 
+2024-07-29 11:14:34.507895 : CRITICAL : HEXACORE : type error ---> 'store' 
+2024-07-29 11:14:34.526926 : CRITICAL : HEXACORE : some error during launch quest 
+2024-07-29 11:14:36.851188 : USSUALLY : OTHER : back to main position 
+2024-07-29 11:14:36.865190 : USSUALLY : OTHER : all quests on haley gallagher account done 
+2024-07-29 11:14:36.984112 : USSUALLY : OTHER : haley gallagher was close 
+2024-07-29 11:14:39.005374 : USSUALLY : OTHER : все аккаунты сделаны 
+2024-07-29 11:20:33.010881 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-29 11:20:36.322762 : USSUALLY : OTHER : amanda hart will launch 
+2024-07-29 11:20:55.619413 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-07-29 11:20:55.636495 : USSUALLY : OTHER : roll_down starting 
+2024-07-29 11:20:55.652524 : USSUALLY : HEXACORE : was delete from var_list 
+2024-07-29 11:21:07.642460 : CRITICAL : HEXACORE : type error ---> 'store' 
+2024-07-29 11:21:07.654457 : CRITICAL : HEXACORE : some error during launch quest 
+2024-07-29 11:21:09.992054 : USSUALLY : OTHER : back to main position 
+2024-07-29 11:21:10.003055 : USSUALLY : OTHER : all quests on amanda hart account done 
+2024-07-29 11:21:10.119055 : USSUALLY : OTHER : amanda hart was close 
+2024-07-29 11:21:12.137607 : USSUALLY : OTHER : все аккаунты сделаны 
+2024-07-29 11:22:55.649675 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-29 11:22:57.593660 : USSUALLY : OTHER : amanda hart will launch 
+2024-07-29 11:23:16.882354 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-07-29 11:23:16.899354 : USSUALLY : OTHER : roll_down starting 
+2024-07-29 11:23:16.909346 : USSUALLY : HEXACORE : was delete from var_list 
+2024-07-29 11:23:31.752058 : CRITICAL : HEXACORE : type error ---> position() got an unexpected keyword argument 'duration' 
+2024-07-29 11:23:31.763057 : CRITICAL : HEXACORE : some error during launch quest 
+2024-07-29 11:23:34.083900 : USSUALLY : OTHER : back to main position 
+2024-07-29 11:23:34.100900 : USSUALLY : OTHER : all quests on amanda hart account done 
+2024-07-29 11:23:34.215676 : USSUALLY : OTHER : amanda hart was close 
+2024-07-29 11:23:36.234454 : USSUALLY : OTHER : все аккаунты сделаны 
+2024-07-29 11:25:07.811207 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-29 11:25:10.585039 : USSUALLY : OTHER : amanda hart will launch 
+2024-07-29 11:25:29.887737 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-07-29 11:25:29.904747 : USSUALLY : OTHER : roll_down starting 
+2024-07-29 11:25:29.913736 : USSUALLY : HEXACORE : was delete from var_list 
+2024-07-29 11:25:47.071709 : CRITICAL : HEXACORE : type error ---> position() got an unexpected keyword argument 'duration' 
+2024-07-29 11:25:47.088701 : CRITICAL : HEXACORE : some error during launch quest 
+2024-07-29 11:25:49.408460 : USSUALLY : OTHER : back to main position 
+2024-07-29 11:25:49.418914 : USSUALLY : OTHER : all quests on amanda hart account done 
+2024-07-29 11:25:49.543819 : USSUALLY : OTHER : amanda hart was close 
+2024-07-29 11:25:51.561867 : USSUALLY : OTHER : все аккаунты сделаны 
+2024-07-29 11:28:21.383208 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-29 11:28:22.631689 : USSUALLY : OTHER : amanda hart will launch 
+2024-07-29 11:28:41.928187 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-07-29 11:28:41.945105 : USSUALLY : OTHER : roll_down starting 
+2024-07-29 11:28:41.956490 : USSUALLY : HEXACORE : was delete from var_list 
+2024-07-29 11:28:59.131560 : CRITICAL : HEXACORE : type error ---> position() got an unexpected keyword argument 'duration' 
+2024-07-29 11:28:59.145555 : CRITICAL : HEXACORE : some error during launch quest 
+2024-07-29 11:29:01.466785 : USSUALLY : OTHER : back to main position 
+2024-07-29 11:29:01.482777 : USSUALLY : OTHER : all quests on amanda hart account done 
+2024-07-29 11:29:01.608667 : USSUALLY : OTHER : amanda hart was close 
+2024-07-29 11:29:03.627775 : USSUALLY : OTHER : все аккаунты сделаны 
+2024-07-29 11:33:11.692895 : SUCCESSFUL : OTHER : mode decline 
+2024-07-29 11:33:11.702900 : SUCCESSFUL : OTHER : mode accepted 
+2024-07-29 11:33:13.981316 : USSUALLY : OTHER : amanda hart will launch 
+2024-07-29 11:33:33.283795 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-07-29 11:33:33.299835 : USSUALLY : OTHER : roll_down starting 
+2024-07-29 11:33:33.312697 : USSUALLY : HEXACORE : was delete from var_list 
+2024-07-29 11:34:03.899104 : SUCCESSFUL : HEXACORE : quest was done 
+2024-07-29 11:34:06.239624 : USSUALLY : OTHER : back to main position 
+2024-07-29 11:34:06.250613 : USSUALLY : OTHER : all quests on amanda hart account done 
+2024-07-29 11:34:06.361640 : USSUALLY : OTHER : amanda hart was close 
+2024-07-29 11:34:08.372131 : USSUALLY : OTHER : все аккаунты сделаны 

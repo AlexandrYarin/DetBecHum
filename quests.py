@@ -184,6 +184,21 @@ def hexacore(mode):
     time.sleep(7)
     d= 0.5
     
+    
+    #store in
+    pa.click(*buttons_h['store'], duration=d)
+    time.sleep(2)
+    #store2
+    pa.click(*buttons_h['store2'], duration=d)
+    #scrollbar down
+    pa.moveTo(*buttons_b['scroll_bar'], duration=d)
+    pa.drag(0, 100, button='left', duration=d + 0.5)
+    #buy clicks
+    pa.click(*buttons_h['clicks'], duration=d)
+    #main menu
+    pa.click(*buttons_h['main_menu'], duration=d)
+    time.sleep(2)
+    
     def claim():
         
         pa.moveTo(*buttons_h['scroll_bar'], duration=d)
@@ -209,7 +224,7 @@ def hexacore(mode):
         #-------------STOP------------------
     
     def farm():
-        for i in range(1000):
+        for i in range(11000):
             pa.click(*buttons_h['push'])
             time.sleep(random.uniform(0.03,0.1))
         time.sleep(1)
