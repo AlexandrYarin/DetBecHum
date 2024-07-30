@@ -5,7 +5,7 @@ import json
 import pyautogui as pa
 from datetime import datetime as dt
 from logs import logs
-from quests import blum, yescoin, pocket, snapster, hexacore, tabizoo, dogs
+from quests import blum, yescoin, pocket, snapster, hexacore, tabizoo, dogs, claytoncoin, nasduck, yumify
 pa.FAILSAFE = False
 
 
@@ -50,7 +50,10 @@ function_dict = {
     'Yescoin': yescoin,
     'Blum': blum,
     'TabiZoo': tabizoo,
-    'Dogs': dogs
+    'Dogs': dogs,
+    'Clayton Game': claytoncoin,
+    '$NASDUCK': nasduck,
+    'YumifyBot': yumify 
 }
 
 

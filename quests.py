@@ -23,6 +23,18 @@ buttons_t = c_quests['tabizoo']
 buttons_d = c_quests['dogs']
 
 
+def claytoncoin(mode):
+    pass
+
+
+def yumify(mode):
+    pass
+
+
+def nasduck(mode):
+    pass
+
+
 def dogs(mode):
     pa.click(*buttons_d['start'], duration=0.5)
     time.sleep(8)
