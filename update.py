@@ -86,57 +86,75 @@ def update_points():
     
     while True:
         
-        print('What i need to do?')
-        time.sleep(0.2)
-        print('1: Update Telegram buttons')
-        time.sleep(0.2)
-        print('2: Update Quests buttons')
-        time.sleep(0.2)
+        print('LETS GO? (y/n)')
+        ans_lets = check_answer()
+        if ans_lets == 'y':
+            print('What i need to do?')
+            time.sleep(0.2)
+            print('1: Update Telegram buttons')
+            time.sleep(0.2)
+            print('2: Update Quests buttons')
+            time.sleep(0.2)
         
-        ans = int(input('>>> '))
+            ans = int(input('>>> '))
         
-        if ans == 1:
-            data = coor['telegram']
+            if ans == 1:
+                data = coor['telegram']
             
-        elif ans == 2:
-            data = coor['quests']
-            print('Which quest should update?')
-            for elem in data.keys():
-                print(f': {elem}')
-            quest = input('>>> ')
-            data_two = data[quest]
-            
-            while True:
-                print('Which button should update?')
-            
-                for elem in data_two.keys():
+            elif ans == 2:
+                data = coor['quests']
+                print('Which quest should update?')
+                for elem in data.keys():
                     print(f': {elem}')
-                button = input('>>> ')
-                print('OK')
-                time.sleep(1)
-                print('R U Ready?')
-                input()
-                for i in range(3):
-                    print(f'{i+1}...')
-                print('Scaning new values')
-                new_values = pa.position()
-                time.sleep(1)
-                print('DONE')
-                print(f'Its new values: {new_values}, save it? (y/n)')
-                ans_val = check_answer()
-                if ans_val == 'y':
-                    coor[quest][button] = [new_values[0], new_values[1]]
-                    with open('jsons/coordinates.json', 'w') as file: json.dump(coor, file)
-                    print('Update another one? (y/n)')
-                    ans_val_second = check_answer()
-                    if ans_val_second == 'n':
-                        print('Understood')
-                        break
-                    else:
-                        continue
-                else:
-                    break
+                quest = input('>>> ')
+                data_two = data[quest]
             
+                while True:
+                    print('1: Which button should update')
+                    print('2: or should I add new ones?')
+                
+                    ans_update = int(input('>>> '))
+                
+                    if ans_update == 1:
+                        for elem in data_two.keys():
+                            print(f': {elem}')
+                        button = input('>>> ')
+                        print('OK')
+                        time.sleep(1)
+                        print('R U Ready?')
+                        input()
+                        time.sleep(1)
+                        for i in range(3):
+                            print(f'{i+1}...')
+                            time.sleep(1.5)
+                    
+                        print('Scaning new values')
+                        new_values = pa.position()
+                        time.sleep(1)
+                        print('DONE')
+                        print(f'Its new values: {new_values}, save it? (y/n)')
+                        ans_val = check_answer()
+                        if ans_val == 'y':
+                            coor['quests'][quest][button] = [new_values[0], new_values[1]]
+                            with open('jsons/coordinates.json', 'w') as file: json.dump(coor, file)
+                            print('Update another one? (y/n)')
+                            ans_val_second = check_answer()
+                            if ans_val_second == 'n':
+                                print('Understood')
+                                time.sleep(1)
+                                break
+                            else:
+                                continue
+                        else:
+                            break
+                    else:
+                        print('This script still building...')
+                        time.sleep(2)
+                        print('exit in ...')
+                        for i in range(3,0,-1):
+                            print(f'{i}...')
+                            time.sleep(0.8)
+                        break
         else:
             break
 

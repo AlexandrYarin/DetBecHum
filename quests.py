@@ -204,7 +204,7 @@ def hexacore(mode):
     pa.click(*buttons_h['store2'], duration=d)
     #scrollbar down
     pa.moveTo(*buttons_b['scroll_bar'], duration=d)
-    pa.drag(0, 100, button='left', duration=d + 0.5)
+    pa.drag(0, 180, button='left', duration=d + 0.5)
     #buy clicks
     pa.click(*buttons_h['clicks'], duration=d)
     #main menu
