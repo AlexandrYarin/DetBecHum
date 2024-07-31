@@ -204,7 +204,7 @@ def hexacore(mode):
     pa.click(*buttons_h['store2'], duration=d)
     #scrollbar down
     pa.moveTo(*buttons_b['scroll_bar'], duration=d)
-    pa.drag(0, 180, button='left', duration=d + 0.5)
+    pa.drag(0, 100, button='left', duration=d + 0.5)
     #buy clicks
     pa.click(*buttons_h['clicks'], duration=d)
     #main menu
@@ -214,11 +214,11 @@ def hexacore(mode):
     def claim():
         
         pa.moveTo(*buttons_h['scroll_bar'], duration=d)
-        pa.drag(0, 100, button='left', duration=0.7)
+        pa.drag(0, 150, button='left', duration=d+0.3)
         #daily button
         pa.click(*buttons_h['daily'], duration=d)
         pa.moveTo(*buttons_h['scroll_bar'], duration=d)
-        pa.drag(0, 100, button='left', duration=0.7)
+        pa.drag(0, 180, button='left', duration=0.7)
         #daily button2
         pa.click(*buttons_h['daily2'], duration=d)
         time.sleep(2)
