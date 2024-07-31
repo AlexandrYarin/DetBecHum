@@ -4,6 +4,7 @@ import time
 import random
 import os
 from shutil import copyfile
+from datetime import datetime
 
 reaction_ls = ['Nice', 'Good', 'Yep', 'Take it', 'We have the point', 'Nice job', 'Done']
 
@@ -80,7 +81,9 @@ def add_logo():
 
 def update_points():
     
-    copyfile('jsons/coordinates.json', 'jsons/coordinates_backup.json')
+    time = datetime.now()
+    time_add = f'{time.time().hour}:{time.time().minute}:{time.time().second}'
+    copyfile('jsons/coordinates.json', f'backups/coordinates{time_add}.json')
     with open('jsons/coordinates.json', 'r') as file: coor = json.load(file)
     
     
