@@ -11,14 +11,18 @@ def logs(type, name_quest, message):
     }
     
     quest_dict = {
-        'y': 'YESCOIN',
-        'p': 'POCKET',
-        'b': 'BLUM',
-        'h': 'HEXACORE',
-        's': 'SNAPSTER',
-        't': 'TABIZOO',
-        'd': 'DOGS',
-        'o': 'OTHER'
+        'yes': 'YESCOIN',
+        'poc': 'POCKET',
+        'blu': 'BLUM',
+        'hex': 'HEXACORE',
+        'sna': 'SNAPSTER',
+        'tab': 'TABIZOO',
+        'dog': 'DOGS',
+        'oth': 'OTHER',
+        'los': 'LOST_DOGS',
+        'yum': 'YUMIFY',
+        'cla': 'CLAYTON',
+        'nas': 'NASDUCK'
     }
     
     with open('logs.log', 'a+', encoding='utf-8') as file:

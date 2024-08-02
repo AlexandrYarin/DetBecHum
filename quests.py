@@ -10,6 +10,8 @@ with open('jsons\\coordinates.json', 'r') as file: coor = json.load(file)
 
 pac_games = input('Сколько игр нужно сделать? >>> ')
 
+#duration of mouse click
+D = 0.5
 
 c_gram = coor['telegram']
 c_quests = coor['quests']
@@ -21,18 +23,76 @@ buttons_h = c_quests['hexacore']
 buttons_s = c_quests['snap']
 buttons_t = c_quests['tabizoo']
 buttons_d = c_quests['dogs']
+buttons_l = c_quests['lost_dogs']
+buttons_c = c_quests['clayton']
+buttons_n = c_quests['nasduck']
+buttons_ym = c_quests['yumify']
 
 
-def claytoncoin(mode):
-    pass
+
+def lost_dogs(mode):
+    
+    pa.click(*buttons_l['start'], duration=D)
+    time.sleep(1)
+    pa.click(*buttons_l['start2'], duration=D)
+    time.sleep(7)
+    
+    #pa.click(*buttons_l['next'], duration=D)
+    #time.sleep(3)
+    val = random.randint(1, 5)
+    for i in range(val):
+        pa.click(*buttons_l['arrow'])
+        time.sleep(1)
+    
+    pa.click(*buttons_l['voit'], duration=D)
+    time.sleep(3)
+    pa.click(*buttons_l['letsgo'], duration=D)
+    time.sleep(2)
+    
+    pa.click(*c_gram['exit_quest'])
+    time.sleep(1.5)
+
+
+def clayton(mode):
+    
+    pa.click(*buttons_l['start'])
+    time.sleep(5)
+    
+    pa.click(*buttons_c['bonus_claim'], duration=D)
+    time.sleep(2)
+    pa.moveTo(*c_gram['scroll_bar'])
+    pa.drag(0, 100, button='left', duration =D + 0.5)
+    pa.click(*buttons_c['farm'], duration=D)
+    time.sleep(2)
+    
+    pa.click(*c_gram['exit_quest'])
+    time.sleep(1.5)
 
 
 def yumify(mode):
-    pass
+    
+    pa.click(*buttons_ym['play'], duration=D)
+    time.sleep(8)
+    pa.click(*buttons_ym['collect'], duration=D)
+    time.sleep(2)
+    for _ in range(10):
+        pa.click(*buttons_ym['push'])
+        time.sleep(random.uniform(0.02, 0.1))
+    
+    pa.click(*c_gram['exit_quest'])
+    time.sleep(1.5)
 
 
 def nasduck(mode):
-    pass
+    
+    pa.click(*buttons_n['start'], duration=D)
+    time.sleep(5)
+    pa.click(*buttons_n['continue'], duration=D)
+    time.sleep(2)
+    pa.click(*buttons_n['farm'], duration=D)
+    
+    pa.click(*c_gram['exit_quest'])
+    time.sleep(1.5)
 
 
 def dogs(mode):

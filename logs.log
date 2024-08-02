@@ -1,347 +1,3 @@
-
-2024-07-17 17:58:53.277291 : SUCCESSFUL : OTHER : mode accepted 
-2024-07-17 17:58:53.284345 : USSUALLY : OTHER : включен ручной режим 
-2024-07-17 17:59:35.685235 : SUCCESSFUL : OTHER : mode accepted 
-2024-07-17 17:59:35.692231 : USSUALLY : OTHER : включен ручной режим 
-2024-07-17 17:59:54.895358 : USSUALLY : OTHER : all will launch 
-2024-07-17 18:00:58.382900 : SUCCESSFUL : OTHER : mode accepted 
-2024-07-17 18:00:58.389597 : USSUALLY : OTHER : включен ручной режим 
-2024-07-17 18:01:03.533640 : USSUALLY : OTHER : all will launch 
-2024-07-17 18:04:35.256547 : SUCCESSFUL : OTHER : mode accepted 
-2024-07-17 18:04:35.264543 : USSUALLY : OTHER : включен ручной режим 
-2024-07-17 18:05:53.525370 : SUCCESSFUL : OTHER : mode accepted 
-2024-07-17 18:05:53.535368 : USSUALLY : OTHER : включен ручной режим 
-2024-07-17 18:05:57.186073 : USSUALLY : OTHER : amanda hart will launch 
-2024-07-17 18:06:17.494797 : SUCCESSFUL : OTHER : amanda hart launching 
-2024-07-17 18:06:17.507066 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:06:17.514095 : USSUALLY : POCKET : was delete from var_list 
-2024-07-17 18:06:26.174344 : USSUALLY : POCKET : quest restart 
-2024-07-17 18:06:47.149456 : SUCCESSFUL : POCKET : quest was done 
-2024-07-17 18:06:49.485580 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:06:49.499564 : USSUALLY : OTHER : квесты у amanda hart выполнены 
-2024-07-17 18:06:49.609134 : USSUALLY : OTHER : amanda hart was close 
-2024-07-17 18:06:49.617134 : USSUALLY : OTHER : amanda scott will launch 
-2024-07-17 18:07:09.772392 : SUCCESSFUL : OTHER : amanda scott launching 
-2024-07-17 18:07:09.786443 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:07:09.799473 : USSUALLY : POCKET : was delete from var_list 
-2024-07-17 18:07:18.450245 : USSUALLY : POCKET : quest restart 
-2024-07-17 18:07:39.427244 : SUCCESSFUL : POCKET : quest was done 
-2024-07-17 18:07:41.763704 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:07:41.778286 : USSUALLY : OTHER : квесты у amanda scott выполнены 
-2024-07-17 18:07:41.887844 : USSUALLY : OTHER : amanda scott was close 
-2024-07-17 18:07:41.895850 : USSUALLY : OTHER : dawn miller will launch 
-2024-07-17 18:08:02.132488 : SUCCESSFUL : OTHER : dawn miller launching 
-2024-07-17 18:08:02.147476 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:08:02.156473 : USSUALLY : POCKET : was delete from var_list 
-2024-07-17 18:08:10.848070 : USSUALLY : POCKET : quest restart 
-2024-07-17 18:08:31.823346 : SUCCESSFUL : POCKET : quest was done 
-2024-07-17 18:08:34.174675 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:08:34.188664 : USSUALLY : OTHER : квесты у dawn miller выполнены 
-2024-07-17 18:08:34.296995 : USSUALLY : OTHER : dawn miller was close 
-2024-07-17 18:08:34.304995 : USSUALLY : OTHER : erica grant will launch 
-2024-07-17 18:08:54.460241 : SUCCESSFUL : OTHER : erica grant launching 
-2024-07-17 18:08:54.473881 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:08:54.482907 : USSUALLY : POCKET : was delete from var_list 
-2024-07-17 18:09:03.118401 : USSUALLY : POCKET : quest restart 
-2024-07-17 18:09:24.116402 : SUCCESSFUL : POCKET : quest was done 
-2024-07-17 18:09:26.453176 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:09:26.468425 : USSUALLY : OTHER : квесты у erica grant выполнены 
-2024-07-17 18:09:26.577448 : USSUALLY : OTHER : erica grant was close 
-2024-07-17 18:09:26.586450 : USSUALLY : OTHER : haley gallagher will launch 
-2024-07-17 18:09:46.745466 : SUCCESSFUL : OTHER : haley gallagher launching 
-2024-07-17 18:09:46.759457 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:09:46.766457 : USSUALLY : POCKET : was delete from var_list 
-2024-07-17 18:10:37.736261 : CRITICAL : POCKET : page not found >>>> e 
-2024-07-17 18:10:40.087645 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:10:40.101628 : USSUALLY : OTHER : квесты у haley gallagher выполнены 
-2024-07-17 18:10:40.210841 : USSUALLY : OTHER : haley gallagher was close 
-2024-07-17 18:10:40.219125 : USSUALLY : OTHER : jennifer wong will launch 
-2024-07-17 18:11:00.374757 : SUCCESSFUL : OTHER : jennifer wong launching 
-2024-07-17 18:11:00.386045 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:11:00.395419 : USSUALLY : POCKET : was delete from var_list 
-2024-07-17 18:11:09.032051 : USSUALLY : POCKET : quest restart 
-2024-07-17 18:11:30.016543 : SUCCESSFUL : POCKET : quest was done 
-2024-07-17 18:11:32.365513 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:11:32.380513 : USSUALLY : OTHER : квесты у jennifer wong выполнены 
-2024-07-17 18:11:32.491310 : USSUALLY : OTHER : jennifer wong was close 
-2024-07-17 18:11:32.499310 : USSUALLY : OTHER : jill barrera will launch 
-2024-07-17 18:11:52.652260 : SUCCESSFUL : OTHER : jill barrera launching 
-2024-07-17 18:11:52.667185 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:11:52.676182 : USSUALLY : POCKET : was delete from var_list 
-2024-07-17 18:12:01.309568 : USSUALLY : POCKET : quest restart 
-2024-07-17 18:12:22.307919 : SUCCESSFUL : POCKET : quest was done 
-2024-07-17 18:12:24.660409 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:12:24.674417 : USSUALLY : OTHER : квесты у jill barrera выполнены 
-2024-07-17 18:12:24.785136 : USSUALLY : OTHER : jill barrera was close 
-2024-07-17 18:12:24.793135 : USSUALLY : OTHER : kathleen smith will launch 
-2024-07-17 18:12:44.947462 : SUCCESSFUL : OTHER : kathleen smith launching 
-2024-07-17 18:12:44.960456 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:12:44.970053 : USSUALLY : POCKET : was delete from var_list 
-2024-07-17 18:12:53.619879 : USSUALLY : POCKET : quest restart 
-2024-07-17 18:13:14.602342 : SUCCESSFUL : POCKET : quest was done 
-2024-07-17 18:13:16.955332 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:13:16.969324 : USSUALLY : OTHER : квесты у kathleen smith выполнены 
-2024-07-17 18:13:17.079411 : USSUALLY : OTHER : kathleen smith was close 
-2024-07-17 18:13:17.087410 : USSUALLY : OTHER : melissa erickson will launch 
-2024-07-17 18:13:37.240983 : SUCCESSFUL : OTHER : melissa erickson launching 
-2024-07-17 18:13:37.251379 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:13:37.259379 : USSUALLY : POCKET : was delete from var_list 
-2024-07-17 18:13:45.889025 : USSUALLY : POCKET : quest restart 
-2024-07-17 18:14:06.863379 : SUCCESSFUL : POCKET : quest was done 
-2024-07-17 18:14:09.214498 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:14:09.229469 : USSUALLY : OTHER : квесты у melissa erickson выполнены 
-2024-07-17 18:14:09.339185 : USSUALLY : OTHER : melissa erickson was close 
-2024-07-17 18:14:09.347185 : USSUALLY : OTHER : stacy norton will launch 
-2024-07-17 18:14:29.509808 : SUCCESSFUL : OTHER : stacy norton launching 
-2024-07-17 18:14:29.518638 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:14:29.526658 : USSUALLY : POCKET : was delete from var_list 
-2024-07-17 18:14:38.159635 : USSUALLY : POCKET : quest restart 
-2024-07-17 18:14:59.140787 : SUCCESSFUL : POCKET : quest was done 
-2024-07-17 18:15:01.493109 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:15:01.508109 : USSUALLY : OTHER : квесты у stacy norton выполнены 
-2024-07-17 18:15:01.619106 : USSUALLY : OTHER : stacy norton was close 
-2024-07-17 18:15:01.628104 : USSUALLY : OTHER : все аккаунты сделаны 
-2024-07-17 18:19:23.717636 : SUCCESSFUL : OTHER : mode accepted 
-2024-07-17 18:19:23.727637 : USSUALLY : OTHER : amanda hart will launch 
-2024-07-17 18:19:44.034615 : SUCCESSFUL : OTHER : amanda hart launching 
-2024-07-17 18:19:44.048641 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:19:44.056638 : USSUALLY : HEXACORE : was delete from var_list 
-2024-07-17 18:20:02.929051 : SUCCESSFUL : HEXACORE : quest was done 
-2024-07-17 18:20:05.261620 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:20:05.276650 : USSUALLY : SNAPSTER : was delete from var_list 
-2024-07-17 18:20:32.659730 : SUCCESSFUL : OTHER : mode accepted 
-2024-07-17 18:20:32.668746 : USSUALLY : OTHER : включен ручной режим 
-2024-07-17 18:20:50.696380 : USSUALLY : OTHER : amanda hart will launch 
-2024-07-17 18:21:11.002869 : SUCCESSFUL : OTHER : amanda hart launching 
-2024-07-17 18:21:11.013367 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:21:11.021112 : USSUALLY : YESCOIN : was delete from var_list 
-2024-07-17 18:21:19.671805 : USSUALLY : YESCOIN : quest restart 
-2024-07-17 18:22:01.312448 : SUCCESSFUL : YESCOIN : quest was done 
-2024-07-17 18:22:03.650060 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:22:03.663045 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:22:03.672787 : USSUALLY : BLUM : was delete from var_list 
-2024-07-17 18:22:12.326023 : USSUALLY : BLUM : quest restart 
-2024-07-17 18:22:43.465880 : SUCCESSFUL : BLUM : quest was done 
-2024-07-17 18:22:45.817676 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:22:45.832673 : USSUALLY : OTHER : квесты у amanda hart выполнены 
-2024-07-17 18:22:45.941569 : USSUALLY : OTHER : amanda hart was close 
-2024-07-17 18:22:45.950569 : USSUALLY : OTHER : amanda scott will launch 
-2024-07-17 18:23:06.103591 : SUCCESSFUL : OTHER : amanda scott launching 
-2024-07-17 18:23:06.118740 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:23:06.126764 : USSUALLY : YESCOIN : was delete from var_list 
-2024-07-17 18:23:14.833256 : USSUALLY : YESCOIN : quest restart 
-2024-07-17 18:23:56.465972 : SUCCESSFUL : YESCOIN : quest was done 
-2024-07-17 18:23:58.802353 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:23:58.812347 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:23:58.822350 : USSUALLY : BLUM : was delete from var_list 
-2024-07-17 18:24:07.459930 : USSUALLY : BLUM : quest restart 
-2024-07-17 18:24:39.597622 : SUCCESSFUL : BLUM : quest was done 
-2024-07-17 18:24:41.934381 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:24:41.945372 : USSUALLY : OTHER : квесты у amanda scott выполнены 
-2024-07-17 18:24:42.055394 : USSUALLY : OTHER : amanda scott was close 
-2024-07-17 18:24:42.064390 : USSUALLY : OTHER : dawn miller will launch 
-2024-07-17 18:26:03.749642 : SUCCESSFUL : OTHER : mode accepted 
-2024-07-17 18:26:03.759644 : USSUALLY : OTHER : включен ручной режим 
-2024-07-17 18:26:30.456524 : USSUALLY : OTHER : dawn miller will launch 
-2024-07-17 18:26:50.763678 : SUCCESSFUL : OTHER : dawn miller launching 
-2024-07-17 18:26:50.778679 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:26:50.792668 : USSUALLY : YESCOIN : was delete from var_list 
-2024-07-17 18:26:59.451423 : USSUALLY : YESCOIN : quest restart 
-2024-07-17 18:27:41.074241 : SUCCESSFUL : YESCOIN : quest was done 
-2024-07-17 18:27:43.413329 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:27:43.429337 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:27:43.443689 : USSUALLY : BLUM : was delete from var_list 
-2024-07-17 18:27:52.091111 : USSUALLY : BLUM : quest restart 
-2024-07-17 18:28:23.265919 : SUCCESSFUL : BLUM : quest was done 
-2024-07-17 18:28:25.612619 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:28:25.624535 : USSUALLY : OTHER : квесты у dawn miller выполнены 
-2024-07-17 18:28:25.733670 : USSUALLY : OTHER : dawn miller was close 
-2024-07-17 18:28:25.741684 : USSUALLY : OTHER : erica grant will launch 
-2024-07-17 18:28:45.898567 : SUCCESSFUL : OTHER : erica grant launching 
-2024-07-17 18:28:45.907556 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:28:45.915551 : USSUALLY : YESCOIN : was delete from var_list 
-2024-07-17 18:28:54.544549 : USSUALLY : YESCOIN : quest restart 
-2024-07-17 18:29:36.178951 : SUCCESSFUL : YESCOIN : quest was done 
-2024-07-17 18:29:38.533701 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:29:38.550704 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:29:38.558702 : USSUALLY : BLUM : was delete from var_list 
-2024-07-17 18:29:47.190760 : USSUALLY : BLUM : quest restart 
-2024-07-17 18:30:21.343697 : SUCCESSFUL : BLUM : quest was done 
-2024-07-17 18:30:23.683098 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:30:23.698086 : USSUALLY : OTHER : квесты у erica grant выполнены 
-2024-07-17 18:30:23.808397 : USSUALLY : OTHER : erica grant was close 
-2024-07-17 18:30:23.817397 : USSUALLY : OTHER : haley gallagher will launch 
-2024-07-17 18:30:43.972569 : SUCCESSFUL : OTHER : haley gallagher launching 
-2024-07-17 18:30:43.985153 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:30:43.992857 : USSUALLY : YESCOIN : was delete from var_list 
-2024-07-17 18:30:52.626436 : USSUALLY : YESCOIN : quest restart 
-2024-07-17 18:31:34.260998 : SUCCESSFUL : YESCOIN : quest was done 
-2024-07-17 18:31:36.600770 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:31:36.610755 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:31:36.619737 : USSUALLY : BLUM : was delete from var_list 
-2024-07-17 18:31:45.271702 : USSUALLY : BLUM : quest restart 
-2024-07-17 18:32:19.411527 : SUCCESSFUL : BLUM : quest was done 
-2024-07-17 18:32:21.753127 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:32:21.761127 : USSUALLY : OTHER : квесты у haley gallagher выполнены 
-2024-07-17 18:32:21.871548 : USSUALLY : OTHER : haley gallagher was close 
-2024-07-17 18:32:21.880548 : USSUALLY : OTHER : jennifer wong will launch 
-2024-07-17 18:32:42.048071 : SUCCESSFUL : OTHER : jennifer wong launching 
-2024-07-17 18:32:42.064058 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:32:42.071051 : USSUALLY : YESCOIN : was delete from var_list 
-2024-07-17 18:32:50.704206 : USSUALLY : YESCOIN : quest restart 
-2024-07-17 18:33:32.365329 : SUCCESSFUL : YESCOIN : quest was done 
-2024-07-17 18:33:34.704398 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:33:34.715399 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:33:34.723400 : USSUALLY : BLUM : was delete from var_list 
-2024-07-17 18:33:43.362207 : USSUALLY : BLUM : quest restart 
-2024-07-17 18:34:15.515321 : SUCCESSFUL : BLUM : quest was done 
-2024-07-17 18:34:17.856253 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:34:17.871615 : USSUALLY : OTHER : квесты у jennifer wong выполнены 
-2024-07-17 18:34:17.981598 : USSUALLY : OTHER : jennifer wong was close 
-2024-07-17 18:34:17.989599 : USSUALLY : OTHER : jill barrera will launch 
-2024-07-17 18:34:38.142990 : SUCCESSFUL : OTHER : jill barrera launching 
-2024-07-17 18:34:38.157990 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:34:38.168535 : USSUALLY : YESCOIN : was delete from var_list 
-2024-07-17 18:34:46.814173 : USSUALLY : YESCOIN : quest restart 
-2024-07-17 18:35:28.452747 : SUCCESSFUL : YESCOIN : quest was done 
-2024-07-17 18:35:30.790384 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:35:30.806384 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:35:30.821390 : USSUALLY : BLUM : was delete from var_list 
-2024-07-17 18:35:39.481631 : USSUALLY : BLUM : quest restart 
-2024-07-17 18:36:11.620242 : SUCCESSFUL : BLUM : quest was done 
-2024-07-17 18:36:13.956690 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:36:13.971690 : USSUALLY : OTHER : квесты у jill barrera выполнены 
-2024-07-17 18:36:14.082000 : USSUALLY : OTHER : jill barrera was close 
-2024-07-17 18:36:14.091003 : USSUALLY : OTHER : kathleen smith will launch 
-2024-07-17 18:36:34.244562 : SUCCESSFUL : OTHER : kathleen smith launching 
-2024-07-17 18:36:34.259572 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:36:34.268563 : USSUALLY : YESCOIN : was delete from var_list 
-2024-07-17 18:36:42.907092 : USSUALLY : YESCOIN : quest restart 
-2024-07-17 18:37:24.551976 : SUCCESSFUL : YESCOIN : quest was done 
-2024-07-17 18:37:26.892703 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:37:26.907703 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:37:26.922703 : USSUALLY : BLUM : was delete from var_list 
-2024-07-17 18:37:35.567777 : USSUALLY : BLUM : quest restart 
-2024-07-17 18:38:06.723449 : SUCCESSFUL : BLUM : quest was done 
-2024-07-17 18:38:09.075811 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:38:09.091823 : USSUALLY : OTHER : квесты у kathleen smith выполнены 
-2024-07-17 18:38:09.201520 : USSUALLY : OTHER : kathleen smith was close 
-2024-07-17 18:38:09.209515 : USSUALLY : OTHER : melissa erickson will launch 
-2024-07-17 18:38:29.378223 : SUCCESSFUL : OTHER : melissa erickson launching 
-2024-07-17 18:38:29.394218 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:38:29.406214 : USSUALLY : YESCOIN : was delete from var_list 
-2024-07-17 18:38:38.056822 : USSUALLY : YESCOIN : quest restart 
-2024-07-17 18:39:19.702508 : SUCCESSFUL : YESCOIN : quest was done 
-2024-07-17 18:39:22.051039 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:39:22.070038 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:39:22.083028 : USSUALLY : BLUM : was delete from var_list 
-2024-07-17 18:39:30.718997 : USSUALLY : BLUM : quest restart 
-2024-07-17 18:40:00.865043 : SUCCESSFUL : BLUM : quest was done 
-2024-07-17 18:40:03.207714 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:40:03.217710 : USSUALLY : OTHER : квесты у melissa erickson выполнены 
-2024-07-17 18:40:03.328263 : USSUALLY : OTHER : melissa erickson was close 
-2024-07-17 18:40:03.336263 : USSUALLY : OTHER : stacy norton will launch 
-2024-07-17 18:40:23.498529 : SUCCESSFUL : OTHER : stacy norton launching 
-2024-07-17 18:40:23.510529 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:40:23.520702 : USSUALLY : YESCOIN : was delete from var_list 
-2024-07-17 18:40:32.156942 : USSUALLY : YESCOIN : quest restart 
-2024-07-17 18:41:13.801865 : SUCCESSFUL : YESCOIN : quest was done 
-2024-07-17 18:41:16.141971 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:41:16.157340 : USSUALLY : OTHER : roll_down starting 
-2024-07-17 18:41:16.171470 : USSUALLY : BLUM : was delete from var_list 
-2024-07-17 18:41:24.798629 : USSUALLY : BLUM : quest restart 
-2024-07-17 18:41:55.952293 : SUCCESSFUL : BLUM : quest was done 
-2024-07-17 18:41:58.291445 : USSUALLY : OTHER : back to main position 
-2024-07-17 18:41:58.306457 : USSUALLY : OTHER : квесты у stacy norton выполнены 
-2024-07-17 18:41:58.419022 : USSUALLY : OTHER : stacy norton was close 
-2024-07-17 18:41:58.429023 : USSUALLY : OTHER : все аккаунты сделаны 
-2024-07-18 10:10:02.210727 : SUCCESSFUL : OTHER : mode accepted 
-2024-07-18 10:10:02.220722 : USSUALLY : OTHER : включен ручной режим 
-2024-07-18 10:10:21.110002 : USSUALLY : OTHER : amanda hart will launch 
-2024-07-18 10:10:41.498764 : SUCCESSFUL : OTHER : amanda hart launching 
-2024-07-18 10:10:41.510750 : USSUALLY : OTHER : roll_down starting 
-2024-07-18 10:10:41.520756 : USSUALLY : HEXACORE : was delete from var_list 
-2024-07-18 10:11:00.407567 : SUCCESSFUL : HEXACORE : quest was done 
-2024-07-18 10:11:02.746357 : USSUALLY : OTHER : back to main position 
-2024-07-18 10:11:02.754435 : USSUALLY : YESCOIN : was delete from var_list 
-2024-07-18 10:11:11.388258 : USSUALLY : YESCOIN : quest restart 
-2024-07-18 10:11:47.024956 : SUCCESSFUL : YESCOIN : quest was done 
-2024-07-18 10:11:49.363762 : USSUALLY : OTHER : back to main position 
-2024-07-18 10:11:49.372752 : USSUALLY : OTHER : roll_down starting 
-2024-07-18 10:11:49.381747 : USSUALLY : POCKET : was delete from var_list 
-2024-07-18 10:11:58.023864 : USSUALLY : POCKET : quest restart 
-2024-07-18 10:12:19.003187 : SUCCESSFUL : POCKET : quest was done 
-2024-07-18 10:12:21.352288 : USSUALLY : OTHER : back to main position 
-2024-07-18 10:12:21.367317 : USSUALLY : OTHER : roll_down starting 
-2024-07-18 10:12:21.380313 : USSUALLY : BLUM : was delete from var_list 
-2024-07-18 10:12:30.006650 : USSUALLY : BLUM : quest restart 
-2024-07-18 10:13:01.184169 : SUCCESSFUL : BLUM : quest was done 
-2024-07-18 10:13:03.534306 : USSUALLY : OTHER : back to main position 
-2024-07-18 10:13:03.549318 : USSUALLY : OTHER : квесты у amanda hart выполнены 
-2024-07-18 10:13:03.662420 : USSUALLY : OTHER : amanda hart was close 
-2024-07-18 10:13:03.671421 : USSUALLY : OTHER : amanda scott will launch 
-2024-07-18 10:13:23.922616 : SUCCESSFUL : OTHER : amanda scott launching 
-2024-07-18 10:13:23.932646 : USSUALLY : OTHER : roll_down starting 
-2024-07-18 10:13:23.941450 : USSUALLY : HEXACORE : was delete from var_list 
-2024-07-18 10:13:42.784527 : SUCCESSFUL : HEXACORE : quest was done 
-2024-07-18 10:13:45.133520 : USSUALLY : OTHER : back to main position 
-2024-07-18 10:13:45.142509 : USSUALLY : YESCOIN : was delete from var_list 
-2024-07-18 10:13:53.776606 : USSUALLY : YESCOIN : quest restart 
-2024-07-18 10:14:29.385735 : SUCCESSFUL : YESCOIN : quest was done 
-2024-07-18 10:14:31.739039 : USSUALLY : OTHER : back to main position 
-2024-07-18 10:14:31.754378 : USSUALLY : OTHER : roll_down starting 
-2024-07-18 10:14:31.764376 : USSUALLY : POCKET : was delete from var_list 
-2024-07-18 10:14:40.396203 : USSUALLY : POCKET : quest restart 
-2024-07-18 10:15:01.371871 : SUCCESSFUL : POCKET : quest was done 
-2024-07-18 10:15:03.725856 : USSUALLY : OTHER : back to main position 
-2024-07-18 10:15:03.740855 : USSUALLY : OTHER : roll_down starting 
-2024-07-18 10:15:03.755856 : USSUALLY : BLUM : was delete from var_list 
-2024-07-18 10:15:12.417350 : USSUALLY : BLUM : quest restart 
-2024-07-18 10:15:46.569519 : SUCCESSFUL : BLUM : quest was done 
-2024-07-18 10:15:48.910974 : USSUALLY : OTHER : back to main position 
-2024-07-18 10:15:48.920964 : USSUALLY : OTHER : квесты у amanda scott выполнены 
-2024-07-18 10:15:49.030533 : USSUALLY : OTHER : amanda scott was close 
-2024-07-18 10:15:49.038529 : USSUALLY : OTHER : dawn miller will launch 
-2024-07-18 10:16:09.281876 : SUCCESSFUL : OTHER : dawn miller launching 
-2024-07-18 10:16:09.297888 : USSUALLY : OTHER : roll_down starting 
-2024-07-18 10:16:09.312880 : USSUALLY : HEXACORE : was delete from var_list 
-2024-07-18 10:16:28.134244 : SUCCESSFUL : HEXACORE : quest was done 
-2024-07-18 10:16:30.475506 : USSUALLY : OTHER : back to main position 
-2024-07-18 10:16:30.491253 : USSUALLY : YESCOIN : was delete from var_list 
-2024-07-18 10:16:39.152147 : USSUALLY : YESCOIN : quest restart 
-2024-07-18 10:17:14.774549 : SUCCESSFUL : YESCOIN : quest was done 
-2024-07-18 10:17:17.111037 : USSUALLY : OTHER : back to main position 
-2024-07-18 10:17:17.121032 : USSUALLY : OTHER : roll_down starting 
-2024-07-18 10:17:17.130032 : USSUALLY : POCKET : was delete from var_list 
-2024-07-18 10:17:25.772396 : USSUALLY : POCKET : quest restart 
-2024-07-18 10:17:46.748413 : SUCCESSFUL : POCKET : quest was done 
-2024-07-18 10:17:49.100852 : USSUALLY : OTHER : back to main position 
-2024-07-18 10:17:49.115863 : USSUALLY : OTHER : roll_down starting 
-2024-07-18 10:17:49.128851 : USSUALLY : BLUM : was delete from var_list 
-2024-07-18 10:17:57.761612 : USSUALLY : BLUM : quest restart 
-2024-07-18 10:18:31.929011 : SUCCESSFUL : BLUM : quest was done 
-2024-07-18 10:18:34.269865 : USSUALLY : OTHER : back to main position 
-2024-07-18 10:18:34.280867 : USSUALLY : OTHER : квесты у dawn miller выполнены 
-2024-07-18 10:18:34.397404 : USSUALLY : OTHER : dawn miller was close 
-2024-07-18 10:18:34.406404 : USSUALLY : OTHER : erica grant will launch 
-2024-07-18 10:18:54.673996 : SUCCESSFUL : OTHER : erica grant launching 
-2024-07-18 10:18:54.689998 : USSUALLY : OTHER : roll_down starting 
-2024-07-18 10:18:54.704998 : USSUALLY : HEXACORE : was delete from var_list 
-2024-07-18 10:19:13.540083 : SUCCESSFUL : HEXACORE : quest was done 
-2024-07-18 10:19:15.885131 : USSUALLY : OTHER : back to main position 
-2024-07-18 10:19:15.901131 : USSUALLY : YESCOIN : was delete from var_list 
-2024-07-18 10:19:24.570468 : USSUALLY : YESCOIN : quest restart 
-2024-07-18 10:20:00.226560 : SUCCESSFUL : YESCOIN : quest was done 
-2024-07-18 10:20:02.574470 : USSUALLY : OTHER : back to main position 
-2024-07-18 10:20:02.589469 : USSUALLY : OTHER : roll_down starting 
-2024-07-18 10:20:02.600941 : USSUALLY : POCKET : was delete from var_list 
-2024-07-18 10:20:11.231481 : USSUALLY : POCKET : quest restart 
-2024-07-18 10:20:32.207443 : SUCCESSFUL : POCKET : quest was done 
-2024-07-18 10:20:34.559178 : USSUALLY : OTHER : back to main position 
-2024-07-18 10:20:34.574178 : USSUALLY : OTHER : roll_down starting 
-2024-07-18 10:20:34.583167 : USSUALLY : BLUM : was delete from var_list 
-2024-07-18 10:20:43.217677 : USSUALLY : BLUM : quest restart 
-2024-07-18 10:21:17.378304 : SUCCESSFUL : BLUM : quest was done 
 2024-07-18 10:21:19.728441 : USSUALLY : OTHER : back to main position 
 2024-07-18 10:21:19.738658 : USSUALLY : OTHER : квесты у erica grant выполнены 
 2024-07-18 10:21:19.852776 : USSUALLY : OTHER : erica grant was close 
@@ -757,3 +413,145 @@
 2024-07-31 11:18:01.648059 : USSUALLY : OTHER : all quests on amanda hart account done 
 2024-07-31 11:18:01.758685 : USSUALLY : OTHER : amanda hart was close 
 2024-07-31 11:18:03.777219 : USSUALLY : OTHER : РІСЃРµ Р°РєРєР°СѓРЅС‚С‹ СЃРґРµР»Р°РЅС‹ 
+2024-08-02 15:48:02.922586 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 15:49:05.881698 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 15:50:30.423706 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 15:52:22.550480 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 15:53:12.679192 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 15:54:54.772534 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 15:55:03.900871 : USSUALLY : OTHER : lucy roberts will launch 
+2024-08-02 15:55:23.208531 : SUCCESSFUL : OTHER : lucy roberts launching 
+2024-08-02 15:55:23.217526 : USSUALLY : OTHER : roll_down starting 
+2024-08-02 15:55:23.225526 : USSUALLY : SNAPSTER : was delete from var_list 
+2024-08-02 15:55:40.029182 : SUCCESSFUL : SNAPSTER : quest was done 
+2024-08-02 15:55:42.380622 : USSUALLY : OTHER : back to main position 
+2024-08-02 15:55:42.389616 : USSUALLY : OTHER : all quests on lucy roberts account done 
+2024-08-02 15:55:42.507010 : USSUALLY : OTHER : lucy roberts was close 
+2024-08-02 15:55:44.524651 : USSUALLY : OTHER : РІСЃРµ Р°РєРєР°СѓРЅС‚С‹ СЃРґРµР»Р°РЅС‹ 
+2024-08-02 16:01:27.498266 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 16:01:37.812291 : USSUALLY : OTHER : jeffrey taylor will launch 
+2024-08-02 16:01:57.114682 : SUCCESSFUL : OTHER : jeffrey taylor launching 
+2024-08-02 16:01:57.127708 : USSUALLY : OTHER : roll_down starting 
+2024-08-02 16:01:57.138708 : USSUALLY : POCKET : was delete from var_list 
+2024-08-02 16:02:21.062121 : SUCCESSFUL : POCKET : quest was done 
+2024-08-02 16:02:23.413530 : USSUALLY : OTHER : back to main position 
+2024-08-02 16:02:23.430530 : USSUALLY : OTHER : all quests on jeffrey taylor account done 
+2024-08-02 16:02:23.542168 : USSUALLY : OTHER : jeffrey taylor was close 
+2024-08-02 16:02:25.550993 : USSUALLY : OTHER : kathleen smith will launch 
+2024-08-02 16:33:53.750902 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 16:33:58.942722 : USSUALLY : OTHER : amanda hart will launch 
+2024-08-02 16:34:18.240634 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-08-02 16:34:18.257634 : USSUALLY : OTHER : roll_down starting 
+2024-08-02 16:42:13.514902 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 16:42:17.586872 : USSUALLY : OTHER : amanda hart will launch 
+2024-08-02 16:42:36.888350 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-08-02 16:42:36.905360 : USSUALLY : OTHER : roll_down starting 
+2024-08-02 16:42:36.921352 : USSUALLY : LOST_DOGS : was delete from var_list 
+2024-08-02 16:44:24.564081 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 16:52:14.904165 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 16:52:22.623562 : USSUALLY : OTHER : amanda hart will launch 
+2024-08-02 16:52:41.924443 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-08-02 16:52:41.934443 : USSUALLY : OTHER : roll_down starting 
+2024-08-02 16:52:41.944437 : USSUALLY : LOST_DOGS : was delete from var_list 
+2024-08-02 16:53:06.582844 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 16:53:09.831192 : USSUALLY : OTHER : amanda hart will launch 
+2024-08-02 16:53:29.138479 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-08-02 16:53:29.158464 : USSUALLY : OTHER : roll_down starting 
+2024-08-02 16:53:29.169467 : USSUALLY : LOST_DOGS : was delete from var_list 
+2024-08-02 16:55:41.825316 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 16:55:44.807860 : USSUALLY : OTHER : amanda hart will launch 
+2024-08-02 16:56:04.113323 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-08-02 16:56:04.133336 : USSUALLY : OTHER : roll_down starting 
+2024-08-02 16:56:04.146321 : USSUALLY : LOST_DOGS : was delete from var_list 
+2024-08-02 16:58:52.496989 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 16:59:00.774091 : USSUALLY : OTHER : amanda hart will launch 
+2024-08-02 16:59:20.075534 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-08-02 16:59:20.094515 : USSUALLY : OTHER : roll_down starting 
+2024-08-02 16:59:20.104510 : USSUALLY : LOST_DOGS : was delete from var_list 
+2024-08-02 17:03:01.733250 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 17:03:09.885095 : USSUALLY : OTHER : amanda hart will launch 
+2024-08-02 17:03:29.184354 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-08-02 17:03:29.203354 : USSUALLY : OTHER : roll_down starting 
+2024-08-02 17:03:29.213343 : USSUALLY : LOST_DOGS : was delete from var_list 
+2024-08-02 17:03:37.868652 : USSUALLY : LOST_DOGS : quest restart 
+2024-08-02 17:03:55.991845 : CRITICAL : LOST_DOGS : type error ---> 'lost_dogs' 
+2024-08-02 17:03:56.002245 : CRITICAL : LOST_DOGS : some error during launch quest 
+2024-08-02 17:03:58.324099 : USSUALLY : OTHER : back to main position 
+2024-08-02 17:03:58.343139 : USSUALLY : OTHER : all quests on amanda hart account done 
+2024-08-02 17:03:58.488317 : USSUALLY : OTHER : amanda hart was close 
+2024-08-02 17:04:00.510354 : USSUALLY : OTHER : РІСЃРµ Р°РєРєР°СѓРЅС‚С‹ СЃРґРµР»Р°РЅС‹ 
+2024-08-02 17:48:25.635703 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 17:48:32.900026 : USSUALLY : OTHER : amanda hart will launch 
+2024-08-02 17:48:52.200525 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-08-02 17:48:52.213526 : USSUALLY : OTHER : roll_down starting 
+2024-08-02 17:48:52.225526 : USSUALLY : LOST_DOGS : was delete from var_list 
+2024-08-02 17:49:00.875520 : USSUALLY : LOST_DOGS : quest restart 
+2024-08-02 17:49:02.001332 : CRITICAL : LOST_DOGS : type error ---> 'star2' 
+2024-08-02 17:49:02.014370 : CRITICAL : LOST_DOGS : some error during launch quest 
+2024-08-02 17:49:04.350843 : USSUALLY : OTHER : back to main position 
+2024-08-02 17:49:04.361849 : USSUALLY : OTHER : all quests on amanda hart account done 
+2024-08-02 17:49:04.479032 : USSUALLY : OTHER : amanda hart was close 
+2024-08-02 17:49:06.500478 : USSUALLY : OTHER : РІСЃРµ Р°РєРєР°СѓРЅС‚С‹ СЃРґРµР»Р°РЅС‹ 
+2024-08-02 17:49:51.699693 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 17:49:59.675093 : USSUALLY : OTHER : amanda hart will launch 
+2024-08-02 17:50:18.986708 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-08-02 17:50:19.006700 : USSUALLY : OTHER : roll_down starting 
+2024-08-02 17:50:19.017699 : USSUALLY : LOST_DOGS : was delete from var_list 
+2024-08-02 17:50:27.656241 : USSUALLY : LOST_DOGS : quest restart 
+2024-08-02 17:50:29.351706 : CRITICAL : LOST_DOGS : type error ---> 'star2' 
+2024-08-02 17:50:29.364711 : CRITICAL : LOST_DOGS : some error during launch quest 
+2024-08-02 17:50:31.704529 : USSUALLY : OTHER : back to main position 
+2024-08-02 17:50:31.723519 : USSUALLY : OTHER : all quests on amanda hart account done 
+2024-08-02 17:50:31.846846 : USSUALLY : OTHER : amanda hart was close 
+2024-08-02 17:50:33.868003 : USSUALLY : OTHER : РІСЃРµ Р°РєРєР°СѓРЅС‚С‹ СЃРґРµР»Р°РЅС‹ 
+2024-08-02 17:54:06.338111 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 17:54:09.498087 : USSUALLY : OTHER : amanda hart will launch 
+2024-08-02 17:54:28.790863 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-08-02 17:54:28.801863 : USSUALLY : OTHER : roll_down starting 
+2024-08-02 17:54:28.811864 : USSUALLY : LOST_DOGS : was delete from var_list 
+2024-08-02 17:54:53.193017 : SUCCESSFUL : LOST_DOGS : quest was done 
+2024-08-02 17:54:55.544577 : USSUALLY : OTHER : back to main position 
+2024-08-02 17:54:55.564589 : USSUALLY : OTHER : all quests on amanda hart account done 
+2024-08-02 17:54:55.686829 : USSUALLY : OTHER : amanda hart was close 
+2024-08-02 17:54:57.708343 : USSUALLY : OTHER : РІСЃРµ Р°РєРєР°СѓРЅС‚С‹ СЃРґРµР»Р°РЅС‹ 
+2024-08-02 17:59:44.384149 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 17:59:53.195956 : USSUALLY : OTHER : amanda hart will launch 
+2024-08-02 18:00:12.494901 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-08-02 18:00:12.513901 : USSUALLY : OTHER : roll_down starting 
+2024-08-02 18:00:12.533901 : USSUALLY : NASDUCK : was delete from var_list 
+2024-08-02 18:03:20.830412 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 18:03:26.118440 : USSUALLY : OTHER : amanda hart will launch 
+2024-08-02 18:03:43.437675 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-08-02 18:03:43.457479 : USSUALLY : OTHER : roll_down starting 
+2024-08-02 18:03:43.470511 : USSUALLY : LOST_DOGS : was delete from var_list 
+2024-08-02 18:04:07.822178 : SUCCESSFUL : LOST_DOGS : quest was done 
+2024-08-02 18:04:10.173554 : USSUALLY : OTHER : back to main position 
+2024-08-02 18:04:10.192554 : USSUALLY : YUMIFY : was delete from var_list 
+2024-08-02 18:07:10.660120 : SUCCESSFUL : YUMIFY : quest was done 
+2024-08-02 18:07:13.002778 : USSUALLY : OTHER : back to main position 
+2024-08-02 18:07:13.016762 : USSUALLY : OTHER : roll_down starting 
+2024-08-02 18:07:13.026768 : USSUALLY : NASDUCK : was delete from var_list 
+2024-08-02 18:08:04.031075 : CRITICAL : NASDUCK : page not found >>>>  
+2024-08-02 18:27:27.359195 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 18:27:55.383064 : SUCCESSFUL : OTHER : mode accepted 
+2024-08-02 18:28:04.333453 : USSUALLY : OTHER : amanda hart will launch 
+2024-08-02 18:28:21.625880 : SUCCESSFUL : OTHER : amanda hart launching 
+2024-08-02 18:28:21.634880 : USSUALLY : OTHER : roll_down starting 
+2024-08-02 18:28:21.644880 : USSUALLY : CLAYTON : was delete from var_list 
+2024-08-02 18:29:12.699015 : CRITICAL : CLAYTON : page not found >>>>  
+2024-08-02 18:29:12.720006 : WARNING : OTHER : clayton was not found 
+2024-08-02 18:29:15.060017 : USSUALLY : OTHER : back to main position 
+2024-08-02 18:29:15.079959 : USSUALLY : LOST_DOGS : was delete from var_list 
+2024-08-02 18:29:38.335517 : SUCCESSFUL : LOST_DOGS : quest was done 
+2024-08-02 18:29:40.689447 : USSUALLY : OTHER : back to main position 
+2024-08-02 18:29:40.706481 : USSUALLY : OTHER : roll_down starting 
+2024-08-02 18:29:40.719474 : USSUALLY : NASDUCK : was delete from var_list 
+2024-08-02 18:29:56.226950 : SUCCESSFUL : NASDUCK : quest was done 
+2024-08-02 18:29:58.576141 : USSUALLY : OTHER : back to main position 
+2024-08-02 18:29:58.590119 : USSUALLY : OTHER : roll_down starting 
+2024-08-02 18:29:58.601119 : USSUALLY : YUMIFY : was delete from var_list 
+2024-08-02 18:30:18.083324 : SUCCESSFUL : YUMIFY : quest was done 
+2024-08-02 18:30:20.435333 : USSUALLY : OTHER : back to main position 
+2024-08-02 18:30:20.454366 : USSUALLY : OTHER : all quests on amanda hart account done 
+2024-08-02 18:30:20.577741 : USSUALLY : OTHER : amanda hart was close 
+2024-08-02 18:30:22.601193 : USSUALLY : OTHER : РІСЃРµ Р°РєРєР°СѓРЅС‚С‹ СЃРґРµР»Р°РЅС‹ 

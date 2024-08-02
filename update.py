@@ -25,7 +25,6 @@ def check_answer():
 def add_logo():
     
     image_path = 'C:\\Users\\AYarin.StreetArt\\Desktop\\script\\cr808\\find'
-    corners = ['left up', 'right up', 'left down', 'right down']
 
     while True:
         
@@ -38,25 +37,19 @@ def add_logo():
         points = []
         print('R U REDY ?')
         input()
-        for elem in corners:
-            print(f'         {elem.upper()}')
-            for i in range(3):
-                print(f'{i+1}...')
-                time.sleep(1.5)
-                
-            print('scaning')
-            time.sleep(1)
-            print('Done')
-            time.sleep(1)
-            points.append(pa.position())
-    
-
+        for i in range(3, 0, -1):
+            print(f'{i}...')
+            time.sleep(0.8)
         
-        x = round((points[0][0] + points[2][0]) / 2)
-        y = round((points[0][1] + points[1][1]) / 2)
-        width = points[1][0] - points[0][0]
-        height = points[3][1] - points[1][1]
+        print('scaning')
+        time.sleep(1)
         
+        centr = pa.position()
+        x, y = centr[0] - 15, centr[1] - 15
+        width, height = 30, 30
+        
+        print('Done')
+        time.sleep(1)
         
         page_region = tuple([x, y, width, height])
         print(page_region)

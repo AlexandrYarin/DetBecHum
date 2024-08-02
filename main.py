@@ -5,7 +5,7 @@ import json
 import pyautogui as pa
 from datetime import datetime as dt
 from logs import logs
-from quests import blum, yescoin, pocket, snapster, hexacore, tabizoo, dogs, claytoncoin, nasduck, yumify
+from quests import blum, yescoin, pocket, snapster, hexacore, tabizoo, dogs, clayton, nasduck, yumify, lost_dogs
 pa.FAILSAFE = False
 
 
@@ -24,37 +24,49 @@ else:
 
 pages = {
     'Blum':'find\\blum.png', 'PocketFi':'find\\pocket.png',
-    'Hexacore Gaming Universe | AGO':'find\\hexacore.png',
+    'Hexacore':'find\\hexacore.png',
     'Yescoin':'find\\yes.png', 'snapster trading bot':'find\\snapster.png',
-    'TabiZoo': 'find\\tabizoo.png', 'Dogs': 'find\\dogs.png'
+    'TabiZoo': 'find\\tabizoo.png', 'Dogs': 'find\\dogs.png',
+    'lost_dogs': 'find\\lost_dogs.png', 'nasduck': 'find\\nasduck.png',
+    'clayton': 'find\\clayton.png', 'yumify': 'find\\yumify.png'
         }
 
 with open('jsons\\q_a.json', 'r') as file: q_a = json.load(file)
 with open('jsons\\coordinates.json', 'r') as file: coor = json.load(file)
 
-accounts = q_a['accounts'] #словарь всех аккаунтов
+#создание словаря аккаунтов
+ls = [elem.replace('.lnk', '') for elem in os.listdir(WORK_PATH)]
+accounts = {} #словарь всех аккаунтов
+ls_ = list(zip([i + 1 for i in range(len(ls))], ls))
+for elem in ls_:
+    accounts[elem[0]] = elem[1]
+
+
+
+
 quests = q_a['quests']#словарь всех квестов
-work_list_account, work_list_quests = [elem for elem in accounts.values()][:-1], [elem for elem in quests.values()]
+work_list_account, work_list_quests = [elem for elem in accounts.values()], [elem for elem in quests.values()]
 c_gram = coor['telegram']
 
 
-REGION_Q = (1550, 50, 40, 700) #область поиска квестов
+REGION_Q = (1550, 50, 40, 800) #область поиска квестов
 CONFIDENCE_Q = 0.9 #качество распознания квеста
 
     
     
 function_dict = {
-    'Hexacore Gaming Universe | AGO': hexacore,
+    'Hexacore': hexacore,
     'PocketFi': pocket,
-    'snapster trading bot': snapster,
+    'snapster': snapster,
     'Yescoin': yescoin,
     'Blum': blum,
     'TabiZoo': tabizoo,
     'Dogs': dogs,
-    'Clayton Game': claytoncoin,
-    '$NASDUCK': nasduck,
-    'YumifyBot': yumify 
-}
+    'clayton': clayton,
+    'nasduck': nasduck,
+    'yumify': yumify,
+    'lost_dogs': lost_dogs
+    }
 
 
 
@@ -71,20 +83,20 @@ def mode_check():
     
     while True:
         if mode == 'claim':
-            logs(4, 'o', 'mode accepted')
+            logs(4, 'oth', 'mode accepted')
             return mode
         
         elif mode == 'farm':
-            logs(4, 'o', 'mode accepted')
+            logs(4, 'oth', 'mode accepted')
             return mode
         
         elif mode == 'claim&farm':
-            logs(4, 'o', 'mode accepted')
+            logs(4, 'oth', 'mode accepted')
             return mode
             
         else:
             mode = input('Напиши верное название мода    ')
-            logs(4, 'o', 'mode DECLINE')
+            logs(4, 'oth', 'mode DECLINE')
             
 
 def function_params():
@@ -97,10 +109,11 @@ def function_params():
     #запрашивает номера аккаунтов        
     list_needed_acc = input()
     if '-' in list_needed_acc:
-        raw_list = [i for i in range(int(list_needed_acc[0]), int(list_needed_acc[2])+1)]
-        list_needed_acc_f = [accounts[str(elem)] for elem in raw_list]
+        s_ = list(map(int, list_needed_acc.split('-')))
+        raw_list = [i for i in range(s_[0], s_[1]+1)]
+        list_needed_acc_f = [accounts[int(elem)] for elem in raw_list]
     else:        
-        list_needed_acc_f = [accounts[elem] for elem in list_needed_acc.split(' ')]
+        list_needed_acc_f = [accounts[int(elem)] for elem in list_needed_acc.split(' ')]
     
     
     print('Какие квесты нужно пройти? Напиши цифрой через пробел')
@@ -134,7 +147,7 @@ def find_quests(name_quest):
             time.sleep(5)
         
             if count <= -10:
-                logs(1, name_quest[0], f'Page not found >>>> {e}')
+                logs(1, name_quest[0:3], f'Page not found >>>> {e}')
                 return None
 
 #--------------СТАТИСТИКА-------------------
@@ -177,7 +190,7 @@ while True:
 
 def roll_down(mode, list_of_quests, account):
     
-    logs(3, 'o', 'roll_down starting')
+    logs(3, 'oth', 'roll_down starting')
         
     for i, quest in enumerate(list_of_quests):
         
@@ -185,11 +198,11 @@ def roll_down(mode, list_of_quests, account):
         #проверяет был ли сделан данный квест
         try:
             list_of_quests.remove(quest)
-            logs(3, quest[0], f'was delete from var_list')
+            logs(3, quest[0:3], f'was delete from var_list')
             
         except ValueError:
             
-            logs(3, 'o', f'{quest} was alredy done')
+            logs(3, 'oth', f'{quest} was alredy done')
             print('Этот квест уже сделан')
             continue
         
@@ -198,7 +211,9 @@ def roll_down(mode, list_of_quests, account):
         
         if flag:
             
-            if quest == 'Hexacore Gaming Universe | AGO' or 'TabiZoo' or 'Dogs':
+            if quest in [
+                'Hexacore', 'TabiZoo', 'Dogs',
+                'lost_dogs', 'clayton', 'yumify', 'nasduck']:
                 time.sleep(1.5)
             else:
                 pa.click(*c_gram['menu'], duration=1)
@@ -207,7 +222,7 @@ def roll_down(mode, list_of_quests, account):
                 time.sleep(2)
                 
             
-                logs(3, quest[0], 'quest restart')
+                logs(3, quest[0:3], 'quest restart')
                 
             # Выполенние квеста
             #-------------------------------------
@@ -215,16 +230,16 @@ def roll_down(mode, list_of_quests, account):
             
                 function_dict[quest](mode)
                 stat_dict[account][quest] = stat_dict[account][quest] + f'{mode[0].upper()}'
-                logs(4, quest[0], 'quest was done')
+                logs(4, quest[0:3], 'quest was done')
                 
         
             except Exception as e:
             
-                logs(1, quest[0], f'type error ---> {e}')
-                logs(1, quest[0], 'some error during launch quest')
+                logs(1, quest[0:3], f'type error ---> {e}')
+                logs(1, quest[0:3], 'some error during launch quest')
         else:
             print('Квест не был найден')
-            logs('c', 'o', f'{quest} was not found')
+            logs(2, 'oth', f'{quest} was not found')
             #-------------------------------------
         
         #возвращается в исходное положение
@@ -233,7 +248,7 @@ def roll_down(mode, list_of_quests, account):
         pa.click(*c_gram['tap_folder'])
         time.sleep(2)
 
-        logs(3, 'o', 'back to main position')
+        logs(3, 'oth', 'back to main position')
         
     if len(list_of_quests) > 0:
         roll_down(mode, list_of_quests, account)
@@ -272,13 +287,13 @@ def main_function(mode, work_list_account, work_list_quests):
             random.shuffle(var_list_quests)
             
             
-            logs(3, 'o', f'{account} will launch')
+            logs(3, 'oth', f'{account} will launch')
             
             
 
             if account not in var_list_account:
                 
-                logs(2, 'o', f'{account} was alredy done')
+                logs(2, 'oth', f'{account} was alredy done')
                 pa.click(*c_gram['exit_account'], duration=0.5)
                 time.sleep(2)
                 continue
@@ -289,24 +304,24 @@ def main_function(mode, work_list_account, work_list_quests):
                 
                 #открывает телеграм аккаунт
                 os.startfile(f'{WORK_PATH}\\{account}')
-                time.sleep(15)
+                time.sleep(13)
                 pa.click(*c_gram['tap_folder'])
                 time.sleep(4)
-                logs(4, 'o', f'{account} launching')
+                logs(4, 'oth', f'{account} launching')
                 
                 #выполняются квесты
                 roll_down(mode, var_list_quests, account)
-                logs(3, 'o', f'All quests on {account} account done')
+                logs(3, 'oth', f'All quests on {account} account done')
                 
                 #закрывается телеграм аккаунт
                 pa.click(*c_gram['exit_account'])     
                 var_list_account.remove(account) 
-                logs(3, 'o', f'{account} was close')
+                logs(3, 'oth', f'{account} was close')
                 print(f'{account} was done')
                 time.sleep(2)
                 
     print('Все аккаунты сделаны')
-    logs(3, 'o', 'Все аккаунты сделаны')
+    logs(3, 'oth', 'Все аккаунты сделаны')
 #------------------------/////----------------------------
 #                   РАБТА СКРИПТА
 #------------------------/////----------------------------
@@ -317,7 +332,8 @@ mode = mode_check()
 
 try:
     main_function(mode, work_list_account, work_list_quests)
-except Exception:
+except Exception as e:
+    print(e)
     print('Error')
 finally:
     
