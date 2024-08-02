@@ -136,12 +136,16 @@ def yescoin(mode):
         time.sleep(3)
         pa.click(*buttons_y['exit_daily'])
         time.sleep(2)
+        #temporarily
+        pa.click(*buttons_y['exit_var'], duration=0.3)
         
     elif mode == 'farm':
         
         pa.click(*buttons_y['get_coin'])
         time.sleep(3)
         pa.click(*buttons_y['exit_daily'])
+        time.sleep(2)
+        pa.click(*buttons_y['exit_var'], duration=0.3)
         time.sleep(80)
         
         for i in range(3):
