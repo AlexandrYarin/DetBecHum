@@ -149,7 +149,7 @@ def blum(mode):
     else:
         pac = list(map(int, pac_games.split(' '))) #кол-во игр которое нужно сыграть
     
-    logs(2, 'o', f'games -> {pac}')
+    logs(2, 'oth', f'games -> {pac}')
     
     pa.click(*buttons_b['start'])
     time.sleep(random.randrange(15,20))
@@ -168,9 +168,9 @@ def blum(mode):
         
         try:
             blum_game_start(pac)
-            logs(4, 'b', 'Blum is been through every game.')
+            logs(4, 'blu', 'Blum is been through every game.')
         except Exception as e:
-            logs(2, 'b', f'blum_game error >>>>> {e}')
+            logs(2, 'blu', f'blum_game error >>>>> {e}')
     
     else:
         pass
@@ -196,7 +196,8 @@ def yescoin(mode):
         time.sleep(3)
         pa.click(*buttons_y['exit_daily'])
         time.sleep(2)
-        #temporarily
+        
+        #temporarily block
         pa.click(*buttons_y['exit_var'], duration=0.3)
         
     elif mode == 'farm':
