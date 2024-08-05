@@ -22,15 +22,6 @@ else:
     print('wrong name pc')
     raise ValueError
 
-pages = {
-    'Blum':'find\\blum.png', 'PocketFi':'find\\pocket.png',
-    'Hexacore':'find\\hexacore.png',
-    'Yescoin':'find\\yes.png', 'snapster trading bot':'find\\snapster.png',
-    'TabiZoo': 'find\\tabizoo.png', 'Dogs': 'find\\dogs.png',
-    'lost_dogs': 'find\\lost_dogs.png', 'nasduck': 'find\\nasduck.png',
-    'clayton': 'find\\clayton.png', 'yumify': 'find\\yumify.png'
-        }
-
 with open('jsons\\q_a.json', 'r') as file: q_a = json.load(file)
 with open('jsons\\coordinates.json', 'r') as file: coor = json.load(file)
 
@@ -55,13 +46,13 @@ CONFIDENCE_Q = 0.9 #качество распознания квеста
     
     
 function_dict = {
-    'Hexacore': hexacore,
-    'PocketFi': pocket,
+    'hexacore': hexacore,
+    'pocketfi': pocket,
     'snapster': snapster,
-    'Yescoin': yescoin,
-    'Blum': blum,
-    'TabiZoo': tabizoo,
-    'Dogs': dogs,
+    'yescoin': yescoin,
+    'blum': blum,
+    'tabizoo': tabizoo,
+    'dogs': dogs,
     'clayton': clayton,
     'nasduck': nasduck,
     'yumify': yumify,
@@ -129,12 +120,14 @@ def function_params():
     return list_needed_acc_f, list_needed_quest_f
 
 
-def find_quests(name_quest):
+def find_quests(name_quest, takes=5):
+    
     count = 0
     
     while count <= 0:
         try:
-            x,y = pa.locateCenterOnScreen(pages[name_quest], region=REGION_Q, confidence=CONFIDENCE_Q)
+            
+            x,y = pa.locateCenterOnScreen(f'find\\{name_quest}.png', region=REGION_Q, confidence=CONFIDENCE_Q)
             pa.moveTo(x,y, duration=1)
             pa.click()
             time.sleep(2)
@@ -144,9 +137,11 @@ def find_quests(name_quest):
         except pa.ImageNotFoundException as e:
         
             count -= 1
+            pa.click(coor['telegram']['tap_folder'], duration=0.5)
+            print('page not found')
             time.sleep(5)
         
-            if count <= -10:
+            if count <= -takes:
                 logs(1, name_quest[0:3], f'Page not found >>>> {e}')
                 return None
 
@@ -226,19 +221,24 @@ def roll_down(mode, list_of_quests, account):
                 
             # Выполенние квеста
             #-------------------------------------
+            print(f'{quest}: {mode}')
             try:
             
                 function_dict[quest](mode)
-                stat_dict[account][quest] = stat_dict[account][quest] + f'{mode[0].upper()}'
+                pa.click(*c_gram['tap_folder'])
+                time.sleep(1.5)
+                stat_dict[account][quest] = stat_dict[account][quest] + f'{mode[0].upper() + 's'}'
                 logs(4, quest[0:3], 'quest was done')
                 
         
             except Exception as e:
             
-                logs(1, quest[0:3], f'type error ---> {e}')
-                logs(1, quest[0:3], 'some error during launch quest')
+                logs(1, quest[0:3], f'Error is >>>> {e}')
+                stat_dict[account][quest] = stat_dict[account][quest] + f'{mode[0].upper() + 'e'}'
+                logs(1, quest[0:3], f'some error during launch quest')
         else:
-            print('Квест не был найден')
+            print('quest was not found')
+            stat_dict[account][quest] = stat_dict[account][quest] + f'{mode[0].upper() + 'e'}'
             logs(2, 'oth', f'{quest} was not found')
             #-------------------------------------
         

@@ -17,10 +17,10 @@ c_gram = coor['telegram']
 c_quests = coor['quests']
 
 buttons_b = c_quests['blum']
-buttons_p = c_quests['pocket']
-buttons_y = c_quests['yes']
+buttons_p = c_quests['pocketfi']
+buttons_y = c_quests['yescoin']
 buttons_h = c_quests['hexacore']
-buttons_s = c_quests['snap']
+buttons_s = c_quests['snapster']
 buttons_t = c_quests['tabizoo']
 buttons_d = c_quests['dogs']
 buttons_l = c_quests['lost_dogs']
@@ -37,8 +37,8 @@ def lost_dogs(mode):
     pa.click(*buttons_l['start2'], duration=D)
     time.sleep(7)
     
-    #pa.click(*buttons_l['next'], duration=D)
-    #time.sleep(3)
+    pa.click(*buttons_l['next'], duration=D)
+    time.sleep(3)
     val = random.randint(1, 5)
     for i in range(val):
         pa.click(*buttons_l['arrow'])
@@ -49,8 +49,7 @@ def lost_dogs(mode):
     pa.click(*buttons_l['letsgo'], duration=D)
     time.sleep(2)
     
-    pa.click(*c_gram['exit_quest'])
-    time.sleep(1.5)
+    
 
 
 def clayton(mode):
@@ -64,9 +63,10 @@ def clayton(mode):
     pa.drag(0, 100, button='left', duration =D + 0.5)
     pa.click(*buttons_c['farm'], duration=D)
     time.sleep(2)
+    pa.click(*buttons_c['farm'], duration=D)
+    time.sleep(2)
     
-    pa.click(*c_gram['exit_quest'])
-    time.sleep(1.5)
+    
 
 
 def yumify(mode):
@@ -79,27 +79,29 @@ def yumify(mode):
         pa.click(*buttons_ym['push'])
         time.sleep(random.uniform(0.02, 0.1))
     
-    pa.click(*c_gram['exit_quest'])
-    time.sleep(1.5)
+    
 
 
 def nasduck(mode):
     
     pa.click(*buttons_n['start'], duration=D)
-    time.sleep(5)
+    time.sleep(7)
     pa.click(*buttons_n['continue'], duration=D)
     time.sleep(2)
-    pa.click(*buttons_n['farm'], duration=D)
-    
-    pa.click(*c_gram['exit_quest'])
+    pa.click(*buttons_n['exit_task'], duration=D)
     time.sleep(1.5)
+    pa.click(*buttons_n['claim'], duration=D)
+    time.sleep(2)
+    pa.click(*buttons_n['claim'], duration=D)
+    
+    
 
 
 def dogs(mode):
     pa.click(*buttons_d['start'], duration=0.5)
     time.sleep(8)
-    pa.click(*c_gram['exit_quest'], duration=0.5)
-    time.sleep(1.5)
+    
+    
 
 
 def tabizoo(mode):
@@ -136,11 +138,6 @@ def tabizoo(mode):
         basic()
         farm()     
     
-    pa.click(*c_gram['exit_quest'])
-    time.sleep(1.5)
-    
-
-
 
 def blum(mode):
     
@@ -174,21 +171,14 @@ def blum(mode):
     
     else:
         pass
-            
-        
-    
-    
-    pa.click(*c_gram['exit_quest'])
-    time.sleep(1.5)
     
     
 def yescoin(mode):
-    for i in range(3):
-        pa.click(*buttons_y['start'], duration=1)
-        time.sleep(1)
     
-    time.sleep(2)
-    pa.click(*buttons_y['start2'], duration=1)
+    pa.click(*buttons_y['start'], duration=0.7)
+    
+    time.sleep(3)
+    pa.click(*buttons_y['start2'], duration=0.7)
     time.sleep(15)
     
     if mode == 'claim':
@@ -218,11 +208,6 @@ def yescoin(mode):
             time.sleep(80)
     else:
         pass
-            
-    pa.click(*c_gram['exit_quest'])
-    time.sleep(1.5)
-    pa.click(*c_gram['exit_quest2'])
-    
 
 
 def pocket(mode):
@@ -241,18 +226,11 @@ def pocket(mode):
     time.sleep(3)
     
     
-    pa.click(*c_gram['exit_quest'])
-    time.sleep(1.5)
-    
-    
 def snapster(mode):
     pa.click(*buttons_s['start'])
-    time.sleep(7)
+    time.sleep(12)
     pa.click(*buttons_s['claim'])
     time.sleep(3)
-    
-    pa.click(*c_gram['exit_quest'])
-    time.sleep(1.5)
     
 
 def hexacore(mode):
@@ -261,6 +239,8 @@ def hexacore(mode):
     time.sleep(7)
     d= 0.5
     
+    #temporarily
+    pa.click(*buttons_h['exit_add'], duration=d)
     
     #store in
     pa.click(*buttons_h['store'], duration=d)
@@ -315,6 +295,3 @@ def hexacore(mode):
     else:
         claim()
         farm()
-    
-    pa.click(*c_gram['exit_quest'])
-    time.sleep(1.5)

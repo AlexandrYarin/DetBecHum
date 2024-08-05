@@ -19,7 +19,21 @@ def check_answer():
         else:
             print('Write y or n')
             
+            
+def find_quests(name_quest):
+    
+    with open('jsons/coordinates.json', 'r') as file: coor = json.load(file)
+    REGION_Q, CONFIDENCE_Q = (1550, 50, 40, 800), 0.9 #область поиска квестов
 
+    try:
+            
+        x,y = pa.locateCenterOnScreen(f'find\\{name_quest}.png', region=REGION_Q, confidence=CONFIDENCE_Q)
+        pa.moveTo(x,y, duration=1)
+        pa.click()
+        time.sleep(1)
+            
+    except pa.ImageNotFoundException as e:
+        print('Page not found')
 
 
 def add_logo():
@@ -34,7 +48,6 @@ def add_logo():
         if ans_page == 'n':
             break
         
-        points = []
         print('R U REDY ?')
         input()
         for i in range(3, 0, -1):
@@ -59,10 +72,18 @@ def add_logo():
         img = pa.screenshot(region=page_region)
         img.save(f'find/{name}.png')
         
-
+        
+        print('check search page in ...')
+        for i in range(3,0,-1):
+            print(f'{i}...')
+            time.sleep(0.9)
+        
+        find_quests(name)
+        
         print('Look what we did >>>')
         time.sleep(1)
         os.startfile(f'{image_path}\\{name}.png')
+            
         print('Save this picture? (y/n)')
         answer = check_answer()
         if answer == 'y':
