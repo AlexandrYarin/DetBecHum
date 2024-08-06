@@ -4,9 +4,12 @@ import random
 import json
 from blum_game import blum_game_start
 from logs import logs
+from getpass import getuser
 
+USER = getuser()
+TEMP_PATH = f'C:\\Users\\{USER}\\Desktop\\script\\auto\\temp'
 
-with open('jsons\\coordinates.json', 'r') as file: coor = json.load(file)
+with open(f'{TEMP_PATH}\\jsons\\coordinates.json', 'r') as file: coor = json.load(file)
 
 pac_games = input('Сколько игр нужно сделать? >>> ')
 
@@ -34,10 +37,12 @@ def lost_dogs(mode):
     
     pa.click(*buttons_l['start'], duration=D)
     time.sleep(1)
-    pa.click(*buttons_l['start2'], duration=D)
+    pa.click(*c_gram['ip_check'], duration=D)
     time.sleep(7)
     
     pa.click(*buttons_l['next'], duration=D)
+    time.sleep(1)
+    pa.click(*buttons_l['next2'], duration=D)
     time.sleep(3)
     val = random.randint(1, 5)
     for i in range(val):
@@ -55,7 +60,10 @@ def lost_dogs(mode):
 def clayton(mode):
     
     pa.click(*buttons_l['start'])
+    time.sleep(1)
+    pa.click(*c_gram['ip_check'], duration=D)
     time.sleep(5)
+    
     
     pa.click(*buttons_c['bonus_claim'], duration=D)
     time.sleep(2)
@@ -72,7 +80,11 @@ def clayton(mode):
 def yumify(mode):
     
     pa.click(*buttons_ym['play'], duration=D)
+    time.sleep(1)
+    pa.click(*c_gram['ip_check'], duration=D)
     time.sleep(8)
+    
+    
     pa.click(*buttons_ym['collect'], duration=D)
     time.sleep(2)
     for _ in range(10):
@@ -85,7 +97,11 @@ def yumify(mode):
 def nasduck(mode):
     
     pa.click(*buttons_n['start'], duration=D)
+    time.sleep(1)
+    pa.click(*c_gram['ip_check'], duration=D)
     time.sleep(7)
+    
+    
     pa.click(*buttons_n['continue'], duration=D)
     time.sleep(2)
     pa.click(*buttons_n['exit_task'], duration=D)
@@ -99,7 +115,9 @@ def nasduck(mode):
 
 def dogs(mode):
     pa.click(*buttons_d['start'], duration=0.5)
-    time.sleep(8)
+    time.sleep(1)
+    pa.click(*c_gram['ip_check'], duration=D)
+    time.sleep(7)
     
     
 
@@ -111,7 +129,7 @@ def tabizoo(mode):
     #start quest
     pa.click(*buttons_t['start'], duration=dur)
     pa.click(*buttons_t['start2'], duration=dur+2)
-    time.sleep(10)
+    time.sleep(9)
     
     def basic():
         pa.click(*buttons_t['checkin'], duration=dur)
@@ -149,16 +167,19 @@ def blum(mode):
     logs(2, 'oth', f'games -> {pac}')
     
     pa.click(*buttons_b['start'])
-    time.sleep(random.randrange(15,20))
+    time.sleep(1)
+    pa.click(*c_gram['ip_check'], duration=D)
+    
+    time.sleep(random.randrange(7,10))
     pa.click(*buttons_b['continue'])
-    time.sleep(4)
+    time.sleep(2)
     pa.click(*buttons_b['continue'])
-    time.sleep(4)
+    time.sleep(2)
     
     if mode == 'claim':
     
         pa.click(buttons_b['claim-farming'])
-        time.sleep(3)
+        time.sleep(2)
         pa.click(buttons_b['claim-farming'])
         time.sleep(2)
     elif mode == 'farm':        
@@ -213,6 +234,8 @@ def yescoin(mode):
 def pocket(mode):
     
     pa.click(*buttons_p['start'], duration=1)
+    time.sleep(1)
+    pa.click(*c_gram['ip_check'], duration=D)
     time.sleep(7)
     
     for i in range(3):pa.click(*buttons_p['claim'], duration=0.3)
@@ -228,7 +251,9 @@ def pocket(mode):
     
 def snapster(mode):
     pa.click(*buttons_s['start'])
-    time.sleep(12)
+    time.sleep(1)
+    pa.click(*c_gram['ip_check'], duration=D)
+    time.sleep(10)
     pa.click(*buttons_s['claim'])
     time.sleep(3)
     
@@ -236,6 +261,8 @@ def snapster(mode):
 def hexacore(mode):
     
     pa.click(*buttons_h['start'])
+    time.sleep(1)
+    pa.click(*c_gram['ip_check'], duration=D)
     time.sleep(7)
     d= 0.5
     

@@ -2,11 +2,13 @@ import pyautogui as pa
 import time
 import random 
 import json
-
+from getpass import getuser
 
 #-----------------/////-------------------
+USER = getuser()
+TEMP_PATH = f'C:\\Users\\{USER}\\Desktop\\script\\auto\\temp'
 
-with open('jsons\\coordinates.json', 'r') as file:
+with open(f'{TEMP_PATH}\\jsons\\coordinates.json', 'r') as file:
     coor = json.load(file)
 
 coor_b = coor['quests']['blum']

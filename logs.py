@@ -1,5 +1,8 @@
 from datetime import datetime as dt
+from getpass import getuser
 
+USER = getuser()
+TEMP_PATH = f'C:\\Users\\{USER}\\Desktop\\script\\auto\\temp'
 
 
 def logs(type, name_quest, message):
@@ -25,5 +28,5 @@ def logs(type, name_quest, message):
         'nas': 'NASDUCK'
     }
     
-    with open('logs.log', 'a+', encoding='utf-8') as file:
+    with open(f'{TEMP_PATH}\\logs.log', 'a+', encoding='utf-8') as file:
         file.write(f'{dt.now()} : {type_dict[type]} : {quest_dict[name_quest.lower()]} : {message.lower()} \n')

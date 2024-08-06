@@ -5,8 +5,11 @@ import random
 import os
 from shutil import copyfile
 from datetime import datetime
+from  getpass import getuser
 
 reaction_ls = ['Nice', 'Good', 'Yep', 'Take it', 'We have the point', 'Nice job', 'Done']
+USER = getuser()
+TEMP_PATH = f'C:\\Users\\{USER}\\Desktop\\script\\auto\\temp'
 
 def check_answer():
 
@@ -22,7 +25,7 @@ def check_answer():
             
 def find_quests(name_quest):
     
-    with open('jsons/coordinates.json', 'r') as file: coor = json.load(file)
+    with open(f'{TEMP_PATH}\\jsons\\coordinates.json', 'r') as file: coor = json.load(file)
     REGION_Q, CONFIDENCE_Q = (1550, 50, 40, 800), 0.9 #область поиска квестов
 
     try:
@@ -38,7 +41,7 @@ def find_quests(name_quest):
 
 def add_logo():
     
-    image_path = 'C:\\Users\\AYarin.StreetArt\\Desktop\\script\\cr808\\find'
+    image_path = f'C:\\Users\\{USER}\\Desktop\\script\\DetBecomeHum\\find'
 
     while True:
         
@@ -97,8 +100,8 @@ def update_points():
     
     time = datetime.now()
     time_add = f'{time.time().hour}:{time.time().minute}:{time.time().second}'
-    copyfile('jsons/coordinates.json', f'backups/coordinates{time_add}.json')
-    with open('jsons/coordinates.json', 'r') as file: coor = json.load(file)
+    copyfile(f'{TEMP_PATH}\\jsons\\coordinates.json', f'{TEMP_PATH}\\backups\\coordinates{time_add}.json')
+    with open(f'{TEMP_PATH}\\jsons\\coordinates.json', 'r') as file: coor = json.load(file)
     
     
     while True:
@@ -153,7 +156,7 @@ def update_points():
                         ans_val = check_answer()
                         if ans_val == 'y':
                             coor['quests'][quest][button] = [new_values[0], new_values[1]]
-                            with open('jsons/coordinates.json', 'w') as file: json.dump(coor, file)
+                            with open(f'{TEMP_PATH}\\jsons\\coordinates.json', 'w') as file: json.dump(coor, file)
                             print('Update another one? (y/n)')
                             ans_val_second = check_answer()
                             if ans_val_second == 'n':
@@ -178,7 +181,7 @@ def update_points():
 def add_points_quest():
     
     
-    with open('jsons/coordinates.json', 'r') as file: coor = json.load(file)
+    with open(f'{TEMP_PATH}\\jsons\\coordinates.json', 'r') as file: coor = json.load(file)
     
     new_quest= {}
     
@@ -232,7 +235,7 @@ def add_points_quest():
             try:                
                 for name in new_quest.keys(): coor['quests'][name] = new_quest[name]
                 
-                with open('jsons/coordinates.json', 'w') as file: json.dump(coor, file)
+                with open(f'{TEMP_PATH}\\jsons\\coordinates.json', 'w') as file: json.dump(coor, file)
                 print('Results have been saved')
                 break
             

@@ -6,24 +6,20 @@ import pyautogui as pa
 from datetime import datetime as dt
 from logs import logs
 from quests import blum, yescoin, pocket, snapster, hexacore, tabizoo, dogs, clayton, nasduck, yumify, lost_dogs
+from getpass import getuser
 pa.FAILSAFE = False
-
 
 #------------------------/////----------------------------
 #                КОНСТАНТЫ И ПЕРЕМЕННЫЕ
 #------------------------/////----------------------------
 
-direct = input('Which pc(r/l)')
-if direct == 'r':
-    WORK_PATH = 'C:\\Users\\User_29\\Desktop\\accounts'
-elif direct == 'l':
-    WORK_PATH = 'C:\\Users\\AYarin.StreetArt\\Desktop\\accounts'
-else:
-    print('wrong name pc')
-    raise ValueError
+USER = getuser()
+TEMP_PATH = f'C:\\Users\\{USER}\\Desktop\\script\\auto\\temp'
+WORK_PATH = f'C:\\Users\\{USER}\\Desktop\\accounts'
 
-with open('jsons\\q_a.json', 'r') as file: q_a = json.load(file)
-with open('jsons\\coordinates.json', 'r') as file: coor = json.load(file)
+
+with open(f'{TEMP_PATH}\\jsons\\q_a.json', 'r') as file: q_a = json.load(file)
+with open(f'{TEMP_PATH}\\jsons\\coordinates.json', 'r') as file: coor = json.load(file)
 
 #создание словаря аккаунтов
 ls = [elem.replace('.lnk', '') for elem in os.listdir(WORK_PATH)]
@@ -88,14 +84,58 @@ def mode_check():
         else:
             mode = input('Напиши верное название мода    ')
             logs(4, 'oth', 'mode DECLINE')
-            
+
+
+def show_stat(name_account):
+    
+    mask = {
+    'hexacore': ['Cs', 'Fs'],
+    'pocketfi': ['Cs', 'Cs'],
+    'snapster': ['Cs'],
+    'yescoin': ['Cs', 'Fs', 'Cs'],
+    'blum': ['Cs', 'Fs', 'Cs'],
+    'tabizoo': ['Cs', 'Fs'],
+    'dogs': ['Cs'],
+    'yumify': ['Cs'],
+    'clayton': ['Cs', 'Cs'],
+    'nasduck': ['Cs', 'Cs'],
+    'lost_dogs': ['Cs']
+}
+    
+    quest_dict = stat_dict[name_account]
+    note_done = []
+        
+    for q, res in quest_dict.items():
+        if 'e' in ''.join(res):
+            return '!'
+        else:
+            if len(note_done) > 0:
+                return '*'
+            else:
+                refer = mask[q]
+                raw_list = res.copy()
+                for elem in refer:
+                    try:
+                        raw_list.remove(elem)
+                    except ValueError:
+                        continue
+                if len(raw_list) == 0:
+                    continue
+                else:
+                    note_done.append(q)
+        
+    return '_'            
+
 
 def function_params():
     
     print('Какие аккаунты нужно пройти?')
     #выводит список аккаунтов
     for k, elem in accounts.items():
-        print(f"{k}: {elem}")
+        if k < 10:
+            print(f" {k}: [ {show_stat(elem)} ] {elem}")
+        else:
+            print(f"{k}: [ {show_stat(elem)} ] {elem}")
     
     #запрашивает номера аккаунтов        
     list_needed_acc = input()
@@ -145,13 +185,13 @@ def find_quests(name_quest, takes=5):
                 logs(1, name_quest[0:3], f'Page not found >>>> {e}')
                 return None
 
+
 #--------------СТАТИСТИКА-------------------
 def create_basic_dict():
     #списки квестов и аккаунтов
     acc_list = [elem.replace('.lnk', '')for elem in os.listdir(WORK_PATH)]
 
-    with open('jsons/q_a.json', 'r') as f: data = json.load(f)
-    quest_list = list(data['quests'].values())
+    quest_list = list(q_a['quests'].values())
 
     #создание нулевого словаря
     basic_dict ={}
@@ -161,9 +201,9 @@ def create_basic_dict():
 
     for key in basic_dict.keys():
         for quest in quest_list:
-            basic_dict[key][quest] = ''
+            basic_dict[key][quest] = []
             
-    with open('jsons/stat.json', 'w') as file: json.dump(basic_dict, file)
+    with open(f'{TEMP_PATH}\\jsons\\stat.json', 'w') as file: json.dump(basic_dict, file)
     
 
 
@@ -172,11 +212,11 @@ while True:
     answer=input('Обнулить статистику?(y/n)')
     if answer == 'y':
         create_basic_dict()
-        with open('jsons/stat.json', 'r') as file: stat_dict = json.load(file)
+        with open(f'{TEMP_PATH}\\jsons\\stat.json', 'r') as file: stat_dict = json.load(file)
         break
     elif answer == 'n':
         
-        with open('jsons/stat.json', 'r') as file: stat_dict = json.load(file)
+        with open(f'{TEMP_PATH}\\jsons\\stat.json', 'r') as file: stat_dict = json.load(file)
         break
     else:
         print('write correct argument ---> y or n')
@@ -206,18 +246,18 @@ def roll_down(mode, list_of_quests, account):
         
         if flag:
             
-            if quest in [
-                'Hexacore', 'TabiZoo', 'Dogs',
-                'lost_dogs', 'clayton', 'yumify', 'nasduck']:
-                time.sleep(1.5)
-            else:
-                pa.click(*c_gram['menu'], duration=1)
-                time.sleep(2)
-                pa.hotkey('enter')
-                time.sleep(2)
+            #
+            #if quest in [
+            #    'Hexacore', 'TabiZoo', 'Dogs',
+            #    'lost_dogs', 'clayton', 'yumify', 'nasduck']:
+            #    time.sleep(1.5)
+            #else:
+            #    pa.click(*c_gram['menu'], duration=1)
+            #    time.sleep(2)
+            #    pa.hotkey('enter')
+            #    time.sleep(2)
                 
-            
-                logs(3, quest[0:3], 'quest restart')
+            #    logs(3, quest[0:3], 'quest restart')
                 
             # Выполенние квеста
             #-------------------------------------
@@ -227,18 +267,25 @@ def roll_down(mode, list_of_quests, account):
                 function_dict[quest](mode)
                 pa.click(*c_gram['tap_folder'])
                 time.sleep(1.5)
-                stat_dict[account][quest] = stat_dict[account][quest] + f'{mode[0].upper() + 's'}'
+                cur_status = stat_dict[account][quest]
+                cur_status.append(f'{mode[0].upper() + 's'}')
+                stat_dict[account][quest] = cur_status
                 logs(4, quest[0:3], 'quest was done')
                 
         
             except Exception as e:
             
                 logs(1, quest[0:3], f'Error is >>>> {e}')
-                stat_dict[account][quest] = stat_dict[account][quest] + f'{mode[0].upper() + 'e'}'
+                cur_status = stat_dict[account][quest]
+                cur_status.append(f'{mode[0].upper() + 'e'}')
+                stat_dict[account][quest] = cur_status
                 logs(1, quest[0:3], f'some error during launch quest')
         else:
             print('quest was not found')
-            stat_dict[account][quest] = stat_dict[account][quest] + f'{mode[0].upper() + 'e'}'
+            cur_status = stat_dict[account][quest]
+            cur_status.append(f'{mode[0].upper() + 'e'}')
+            stat_dict[account][quest] = cur_status
+            #stat_dict[account][quest] = stat_dict[account][quest].append(f'{mode[0].upper() + 'e'}')
             logs(2, 'oth', f'{quest} was not found')
             #-------------------------------------
         
@@ -341,7 +388,7 @@ finally:
         
         answer2 = input('Сохранить в статистику пройденные квесты (y/n) ?')
         if answer2 == 'y':
-            with open('jsons/stat.json', 'w') as file: json.dump(stat_dict, file)
+            with open(f'{TEMP_PATH}\\jsons\\stat.json', 'w') as file: json.dump(stat_dict, file)
             break
         elif answer2 == 'n':
             break
