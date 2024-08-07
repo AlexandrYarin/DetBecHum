@@ -68,7 +68,7 @@ def clayton(mode):
     pa.click(*buttons_c['bonus_claim'], duration=D)
     time.sleep(2)
     pa.moveTo(*c_gram['scroll_bar'])
-    pa.drag(0, 100, button='left', duration =D + 0.5)
+    pa.drag(0, 150, button='left', duration =D + 0.5)
     pa.click(*buttons_c['farm'], duration=D)
     time.sleep(2)
     pa.click(*buttons_c['farm'], duration=D)
