@@ -86,6 +86,33 @@ def mode_check():
             logs(4, 'oth', 'mode DECLINE')
 
 
+def show_stat_2(name_account):
+    
+    #value of quests
+    vq = len(list(stat_dict[name_account].keys()))
+    count = 0
+    error_status = ''
+    
+    for k,v in stat_dict[name_account].items():
+        
+        if 'e' in v:
+            error_status += '!'
+        
+        if v == []:
+            continue
+        else:
+            count += 1
+            
+    error_status = '!' if '!' in error_status else '_'
+    
+    return f'[ {error_status} ] [ {count}/{vq}]'
+            
+            
+            
+    
+
+
+
 def show_stat(name_account):
     
     mask = {
@@ -131,11 +158,13 @@ def function_params():
     
     print('Какие аккаунты нужно пройти?')
     #выводит список аккаунтов
+    print(' №  error  value  account')
+    print()
     for k, elem in accounts.items():
         if k < 10:
-            print(f" {k}: [ {show_stat(elem)} ] {elem}")
+            print(f" {k}: {show_stat_2(elem)} {elem}")
         else:
-            print(f"{k}: [ {show_stat(elem)} ] {elem}")
+            print(f"{k}: {show_stat_2(elem)} {elem}")
     
     #запрашивает номера аккаунтов        
     list_needed_acc = input()

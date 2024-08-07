@@ -30,6 +30,43 @@ buttons_l = c_quests['lost_dogs']
 buttons_c = c_quests['clayton']
 buttons_n = c_quests['nasduck']
 buttons_ym = c_quests['yumify']
+buttons_no = c_quests['notai']
+
+
+def notai(mode):
+    
+    pa.click(*buttons_no['start'], duration=D)
+    time.sleep(1)
+    pa.click(*c_gram['ip_check'], duration=D)
+    time.sleep(5)
+    
+    pa.click('exit_ads', duration=D)
+    time.sleep(0.7)
+    pa.click(*buttons_no['main'], duration=D)
+    
+    def claim():
+
+        pa.click(*buttons_no['task'], duration=D)
+        time.sleep(0.7)
+        pa.click(*buttons_no['daily'], duration=D)
+        time.sleep(0.7)
+        pa.click(*buttons_no['take_daily'], duration=D)
+        time.sleep(0.7)
+        pa.click(*buttons_no['exit_daily'], duration=D)
+        time.sleep(0.7)
+        pa.click(*buttons_no['main'], duration=D)
+    
+    def farm():
+        for _ in range(1000):
+            pa.click(*buttons_no['push'], duration=D)
+            time.sleep(random.uniform(0.02, 0.1))
+    
+    if mode == 'claim':
+        claim()
+        time.sleep(2)
+    else:
+        farm()
+        time.sleep(2)
 
 
 
@@ -68,7 +105,7 @@ def clayton(mode):
     pa.click(*buttons_c['bonus_claim'], duration=D)
     time.sleep(2)
     pa.moveTo(*c_gram['scroll_bar'])
-    pa.drag(0, 150, button='left', duration =D + 0.5)
+    pa.drag(0, 180, button='left', duration =D + 0.5)
     pa.click(*buttons_c['farm'], duration=D)
     time.sleep(2)
     pa.click(*buttons_c['farm'], duration=D)
@@ -308,7 +345,7 @@ def hexacore(mode):
         #-------------STOP------------------
     
     def farm():
-        for i in range(11000):
+        for i in range(1000):
             pa.click(*buttons_h['push'])
             time.sleep(random.uniform(0.03,0.1))
         time.sleep(1)

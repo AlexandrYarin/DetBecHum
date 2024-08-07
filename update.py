@@ -41,7 +41,7 @@ def find_quests(name_quest):
 
 def add_logo():
     
-    image_path = f'C:\\Users\\{USER}\\Desktop\\script\\DetBecomeHum\\find'
+    image_path = f'C:\\Users\\{USER}\\Desktop\\script\\auto\\DetBecHum\\find'
 
     while True:
         
@@ -80,7 +80,8 @@ def add_logo():
         for i in range(3,0,-1):
             print(f'{i}...')
             time.sleep(0.9)
-        
+        time.sleep(0.5)
+        pa.moveTo(500, 500)
         find_quests(name)
         
         print('Look what we did >>>')
@@ -98,8 +99,9 @@ def add_logo():
 
 def update_points():
     
-    time = datetime.now()
-    time_add = f'{time.time().hour}:{time.time().minute}:{time.time().second}'
+    time_now = datetime.now()
+    time_add = f'{time_now.time().hour}.{time_now.time().minute}.{time_now.time().second}'
+    #write backup and read file
     copyfile(f'{TEMP_PATH}\\jsons\\coordinates.json', f'{TEMP_PATH}\\backups\\coordinates{time_add}.json')
     with open(f'{TEMP_PATH}\\jsons\\coordinates.json', 'r') as file: coor = json.load(file)
     
@@ -152,6 +154,13 @@ def update_points():
                         new_values = pa.position()
                         time.sleep(1)
                         print('DONE')
+                        
+                        #check new point
+                        print('Check point...')
+                        pa.moveTo(500,500)
+                        time.sleep(1)
+                        pa.moveTo(*new_values, duration=1)
+                        
                         print(f'Its new values: {new_values}, save it? (y/n)')
                         ans_val = check_answer()
                         if ans_val == 'y':
@@ -168,14 +177,45 @@ def update_points():
                         else:
                             break
                     else:
-                        print('This script still building...')
-                        time.sleep(2)
-                        print('exit in ...')
-                        for i in range(3,0,-1):
-                            print(f'{i}...')
-                            time.sleep(0.8)
-                        break
-        else:
+                        print('R U Ready?')
+                        input()
+                        time.sleep(1)
+                        for i in range(3):
+                            print(f'{i+1}...')
+                            time.sleep(1.5)
+
+                        print('Scaning new values')
+                        new_values = pa.position()
+                        time.sleep(1)
+                        print('DONE')
+                        print('Give the button name')
+                        button = input('>>> ')
+                        time.sleep(1)
+                        
+                        #check new point
+                        print('Check point...')
+                        pa.moveTo(500,500)
+                        time.sleep(1)
+                        pa.moveTo(*new_values, duration=1)
+                        
+                        print(f'Its new values: {new_values}, save it? (y/n)')
+                        ans_sv = check_answer()
+                        if ans_sv == 'y':
+                            
+                            data_two[button] = [new_values[0], new_values[1]]
+                            coor['quests'][quest] = data_two
+                            with open(f'{TEMP_PATH}\\jsons\\coordinates.json', 'w') as file: json.dump(coor, file)
+                            print('Add another one? (y/n)')
+                            ans_val_second = check_answer()
+                            if ans_val_second == 'n':
+                                print('Understood')
+                                time.sleep(1)
+                                break
+                            else:
+                                continue
+                        else:
+                            break
+        else:   
             break
 
 def add_points_quest():
