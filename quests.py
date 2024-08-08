@@ -201,7 +201,7 @@ def blum(mode):
     else:
         pac = list(map(int, pac_games.split(' '))) #кол-во игр которое нужно сыграть
     
-    logs(2, 'oth', f'games -> {pac}')
+    logs(3, 'oth', f'games -> {pac}')
     
     pa.click(*buttons_b['start'])
     time.sleep(1)

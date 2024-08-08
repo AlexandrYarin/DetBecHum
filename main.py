@@ -5,7 +5,7 @@ import json
 import pyautogui as pa
 from datetime import datetime as dt
 from logs import logs
-from quests import blum, yescoin, pocket, snapster, hexacore, tabizoo, dogs, clayton, nasduck, yumify, lost_dogs
+from quests import blum, yescoin, pocket, snapster, hexacore, tabizoo, dogs, clayton, nasduck, yumify, lost_dogs, notai
 from getpass import getuser
 pa.FAILSAFE = False
 
@@ -52,7 +52,8 @@ function_dict = {
     'clayton': clayton,
     'nasduck': nasduck,
     'yumify': yumify,
-    'lost_dogs': lost_dogs
+    'lost_dogs': lost_dogs,
+    'notai': notai
     }
 
 
@@ -95,7 +96,7 @@ def show_stat_2(name_account):
     
     for k,v in stat_dict[name_account].items():
         
-        if 'e' in v:
+        if 'e' in ''.join(v):
             error_status += '!'
         
         if v == []:
@@ -112,7 +113,7 @@ def show_stat_2(name_account):
     
 
 
-
+#----------------
 def show_stat(name_account):
     
     mask = {
@@ -152,6 +153,7 @@ def show_stat(name_account):
                     note_done.append(q)
         
     return '_'            
+#----------------
 
 
 def function_params():
