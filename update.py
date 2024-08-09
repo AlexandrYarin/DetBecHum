@@ -26,7 +26,7 @@ def check_answer():
 def find_quests(name_quest):
     
     with open(f'{TEMP_PATH}\\jsons\\coordinates.json', 'r') as file: coor = json.load(file)
-    REGION_Q, CONFIDENCE_Q = (1550, 50, 40, 800), 0.9 #область поиска квестов
+    REGION_Q, CONFIDENCE_Q = tuple(coor['telegram']['region_q']), 0.9 #область поиска квестов
 
     try:
             

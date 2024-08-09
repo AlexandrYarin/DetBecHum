@@ -36,7 +36,7 @@ work_list_account, work_list_quests = [elem for elem in accounts.values()], [ele
 c_gram = coor['telegram']
 
 
-REGION_Q = (1550, 50, 40, 800) #область поиска квестов
+REGION_Q = tuple(c_gram['region_q']) #область поиска квестов
 CONFIDENCE_Q = 0.9 #качество распознания квеста
 
     

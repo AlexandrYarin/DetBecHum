@@ -14,7 +14,7 @@ with open(f'{TEMP_PATH}\\jsons\\coordinates.json', 'r') as file:
 coor_b = coor['quests']['blum']
 c_gram = coor['telegram']
 
-REGION = (1505, 250, 380, 610) #область работы бота
+REGION = tuple(c_gram['region_g']) #область работы бота
 OFFSET = 50 #смещение клика от найденных координат
 DELAY = (0.02, 0.05) #задержка между кликами
 CONFIDENCE = 0.6 #качество распознания
