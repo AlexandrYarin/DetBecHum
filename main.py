@@ -107,53 +107,6 @@ def show_stat_2(name_account):
     error_status = '!' if '!' in error_status else '_'
     
     return f'[ {error_status} ] [ {count}/{vq}]'
-            
-            
-            
-    
-
-
-#----------------
-def show_stat(name_account):
-    
-    mask = {
-    'hexacore': ['Cs', 'Fs'],
-    'pocketfi': ['Cs', 'Cs'],
-    'snapster': ['Cs'],
-    'yescoin': ['Cs', 'Fs', 'Cs'],
-    'blum': ['Cs', 'Fs', 'Cs'],
-    'tabizoo': ['Cs', 'Fs'],
-    'dogs': ['Cs'],
-    'yumify': ['Cs'],
-    'clayton': ['Cs', 'Cs'],
-    'nasduck': ['Cs', 'Cs'],
-    'lost_dogs': ['Cs']
-}
-    
-    quest_dict = stat_dict[name_account]
-    note_done = []
-        
-    for q, res in quest_dict.items():
-        if 'e' in ''.join(res):
-            return '!'
-        else:
-            if len(note_done) > 0:
-                return '*'
-            else:
-                refer = mask[q]
-                raw_list = res.copy()
-                for elem in refer:
-                    try:
-                        raw_list.remove(elem)
-                    except ValueError:
-                        continue
-                if len(raw_list) == 0:
-                    continue
-                else:
-                    note_done.append(q)
-        
-    return '_'            
-#----------------
 
 
 def function_params():

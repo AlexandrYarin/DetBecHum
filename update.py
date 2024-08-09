@@ -41,7 +41,7 @@ def find_quests(name_quest):
 
 def add_logo():
     
-    image_path = f'C:\\Users\\{USER}\\Desktop\\script\\auto\\DetBecHum\\find'
+    image_path = f'C:\\Users\\{USER}\\Desktop\\script\\auto\\botresourse\\find'
 
     while True:
         
