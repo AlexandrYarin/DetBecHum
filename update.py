@@ -121,11 +121,51 @@ def update_points():
             ans = int(input('>>> '))
         
             if ans == 1:
-                data = coor['telegram']
-            
+                while True:
+                    data = coor['telegram']
+                    print('Wich button should I update?')
+                    for elem in data.keys():
+                        print(f': {elem}')
+                    tele = input('>>> ')
+                    print('OK')
+                    time.sleep(1)
+                    print('R U Ready?')
+                    input()
+                    time.sleep(1)
+                    for i in range(3):
+                        print(f'{i+1}...')
+                        time.sleep(1.5)
+                    
+                    print('Scaning new values')
+                    new_values = pa.position()
+                    time.sleep(1)
+                    print('DONE')
+                
+                    #check new point
+                    print('Check point...')
+                    pa.moveTo(500,500)
+                    time.sleep(1)
+                    pa.moveTo(*new_values, duration=1)
+                
+                    print(f'Its new values: {new_values}, save it? (y/n)')
+                    ans_val = check_answer()
+                    if ans_val == 'y':
+                        coor['telegram'][tele] = [new_values[0], new_values[1]]
+                        with open(f'{TEMP_PATH}\\jsons\\coordinates.json', 'w') as file: json.dump(coor, file)
+                        print('Update another one? (y/n)')
+                        ans_val_second = check_answer()
+                        if ans_val_second == 'n':
+                            print('Understood')
+                            time.sleep(1)
+                            break
+                        else:
+                            continue
+                    else:
+                        break
+                
             elif ans == 2:
                 data = coor['quests']
-                print('Which quest should update?')
+                print('Which quest should I update?')
                 for elem in data.keys():
                     print(f': {elem}')
                 quest = input('>>> ')
